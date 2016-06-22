@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Performance food</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="before-load">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- start question page-->
+        <div class="startPage">
+            <p class="whoAreYou">Кто вы?</p>
+            <img src="img/m.png" class="m" control="man" alt="man">
+            <img src="img/w.png" class="w" control="woman" alt="woman">
+        </div>
+        <!-- end question page-->
+
+         <!--Add your site or application content here-->
+
+        <!-- first wrap start-->
+        <div class="wrap ">
+            <div class="logo"></div>
+            <span class="text"></span>
+            <button type="button" class="button button1"></button>
+            <button type="button" class="button button2"></button>
+        </div>
+        <!--first wrap end -->
+
+        <!-- wrap_second start-->
+        <div class="wrap_second">
+            <div class="logo_second"></div>
+            <span class="text_second"></span>
+            <button type="button" class="button button1_second"></button>
+            <button type="button" class="button button2_second"></button>
+        </div>
+        <!--wrap second end-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script>
+//            $(function(){
+//                setTimeout(function(){$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))},10)
+//            });
+            $(window).load( function(){
+                $(".w").on("click" ,function () {
+                    $('.wrap').css('display','block')
+                    $('.startPage').css('display','none')
+                    $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))
+                });
+                $('.m').on("click" ,function () {
+                    $('.wrap_second').css('display','block')
+                    $('.startPage').css('display','none')
+                    $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))
+                });
+
+//                $("body").removeClass("before-load");
+//                $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+
+            });
+
+
+
+
+        </script>
+</body>
+</html>

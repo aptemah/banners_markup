@@ -1,0 +1,53 @@
+.button {
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: appear;
+            animation-name: appear;
+    opacity: 1;
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appear2 {
+  0% {
+            transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+  60% {
+            transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+  100% {
+            transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes appear2 {
+  0% {
+            transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+  60% {
+            transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+  100% {
+            transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+}

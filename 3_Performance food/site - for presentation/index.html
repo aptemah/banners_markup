@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Performance food</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+    <body class="before-load">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="wrap">
+            <div class="logo"></div>
+            <span class="text"></span>
+            <span class="picture"></span>
+            <button type="button" class="button button1"></button>
+            <button type="button" class="button button2"></button>
+        </div>
+
+        <script>
+    if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream){
+  document.querySelector('meta[name=viewport]').setAttribute(
+    'content', 
+    'initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no'
+  );
+}
+
+            $(function(){
+                setTimeout(function(){
+                    $("body").removeClass("before-load");
+                /*$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))*/
+            },10000)
+            });
+            $(window).load( function(){
+                $("body").removeClass("before-load");
+                $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+                setTimeout(function(){$("head").append($("<link rel='stylesheet' href='css/zhim.css' type='text/css' media='screen' />"))},3000)
+            });
+        </script>
+</body>
+</html>

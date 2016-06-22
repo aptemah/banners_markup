@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>ISweet</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="picture">
+            <div class="button-wrap">
+                <button class="button button1">Узнать <br class="for-land">подробнее</button>
+                <button class="button button2">Выйти в <br class="for-land">интернет</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("body").addClass("before-load");
+        $(function(){
+            setTimeout(function(){
+                $("body").removeClass("before-load");
+            },5000)
+        });
+        $(window).load( function(){
+            setTimeout(function(){
+                $("body").removeClass("before-load");
+            },1000)
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">ord = Math.floor(Math.random()*10e12);</script>
+		<script type="text/javascript" src="../../js/linq.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+		function getParam(paramName) {
+			var match = location.href.match(new RegExp(".?" + paramName + "=([^&]*)"));
+			return match ? match[1] : null;
+		}
+		POINT_ID = Number(getParam("it_p") || 1);
+		LINK_LOGIN = getParam("it_l") || "";
+		DEST_URL = getParam("it_d") || "";
+		PROMO = getParam("it_s") || "";
+		MAC_ADDRESS = getParam("it_m") || "";
+		
+		document.write("<" + 'script type="text/javascript" src="../../js/' + 'wifi.js?' + ord +'"><' + "/script>");
+		document.write("<" + 'script type="text/javascript" src="../../js/' + 'events.js?' + ord +'"><' + "/script>");
+	</script>
+</head>
+<body>
+	<div class="landscapeBlock">
+		<div class="leftBlock">
+			<div class="feat">
+				<img src="img/ico1.png" class="ico">ФИТНЕС
+			</div>
+			<div class="feat">
+				<img src="img/ico2.png" class="ico">БАССЕЙН
+			</div>
+			<div class="feat">
+				<img src="img/ico3.png" class="ico">САЛОН
+			</div>
+			<div class="feat">
+				<img src="img/ico4.png" class="ico">РЕСТОРАН
+			</div>
+		</div>
+		<img src="img/logo.png" class="logo" />
+		<div class="btn-go" control="internet" wifinext>Войти в Интернет ></div>
+	</div>
+	<div class="portraitBlock">
+		<div class="topBlock1">
+			<img src="img/logoP.png" />
+		</div>
+		<div class="topBlock2">
+			<img src="img/logo2.png" />
+		</div>
+		<div class="leftSide">
+			<img src="img/img1.jpg" />
+			<img src="img/img2.jpg" />
+			<img src="img/img3.jpg" />
+			<img src="img/img4.jpg" />
+		</div>
+		<div class="rightSide">
+			<div class="btn-goP" control="internet" wifinext>
+				Войти в Интернет >
+			</div>
+			<div class="featP1 firstFeat">
+				<img src="img/ico1.png" ><span>ФИТНЕСС</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico2.png" ><span>БАССЕЙН</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico3.png" ><span>САЛОН</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico4.png" ><span>РЕСТОРАН</span>
+			</div>
+		</div>
+	</div>
+	<script>top.wifiInit(window);</script>
+</body>
+</html>

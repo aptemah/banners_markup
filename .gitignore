@@ -1,0 +1,12 @@
+.idea/
+(nr)*
+*.gdoc
+*.psd
+*.doc
+*.pdf
+*.ini
+*.map
+Archive/
+layout/
+Mockup/
+*[Конфликт]*

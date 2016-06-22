@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>platronics</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-top"></div>
+            <div class="header-bottom"></div>
+        </div>
+        <div class="main">
+            <div class="main-top"></div>
+            <div class="main-bottom"></div>
+            <button class="button-main">Перейти в интернет</button>
+        </div>
+        <div class="footer">
+            <div class="landscape-left-text"></div>
+            <div class="landscape-right-text"></div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(window).load(function () {
+           $(".button-main").addClass("button-move");
+        });
+    </script>
+</body>
+</html>

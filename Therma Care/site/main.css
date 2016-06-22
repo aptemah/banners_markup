@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #FFF;
+}
+div {
+    margin: 0;
+}
+@media screen and (orientation: portrait) {
+    /*Обертка всех элементов*/
+    .wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        position: absolute;
+        height: 15%;
+        width: 100%;
+        background: #e11836;
+    }
+    .logo > img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-height: 65%;
+        max-width: 90%;
+        background: #e11836;
+    }
+    .text-1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 17%;
+        height: 14%;
+        width: 86%;
+        background-image: url(img/text_1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pack {
+        height: 25%;
+        position: absolute;
+        top: 33%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pack > img {
+        position: absolute;
+        height: 100%;
+        left: -4%;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .new {
+        height: 14%;
+        position: absolute;
+        top: 59%;
+        left: -50%;
+        z-index: 10;
+        transition: left .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    .new img {
+        height: 100%;
+        max-height: 100%;
+        position: absolute;
+    }
+    .text-2 {
+        height: 13%;
+        width: 58%;
+        position: absolute;
+        top: 60%;
+        left: 32%;
+        background-image: url(img/text_2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    a .but-inet {
+        height: 9%;
+        max-width: 39%;
+        position: absolute;
+        top: 75%;
+        left: 7%;
+        display: none;
+        transition: display .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    a .but-inet img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+    a .but-order {
+        height: 9%;
+        max-width: 39%;
+        position: absolute;
+        top: 75%;
+        right: 7%;
+        display: none;
+        transition: display .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    a .but-order img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+    .registr {
+        position: absolute;
+        height: 9%;
+        max-width: 100%;
+        top: -10%;
+        font-family: arial, sans-serif;
+        margin-left: 2%;
+        color: #aeadad;
+        z-index: 10;
+    }
+    .registr > img {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        float: left;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0%;
+        height: 13%;
+        width: 100%;
+        background: #e6e6e6;
+    }
+    .footer > img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 75%;
+        width: 96%;
+    }
+}
+@media screen and (orientation: landscape) {
+    .wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        position: absolute;
+        height: 25%;
+        width: 100%;
+        background: #e11836;
+    }
+    .logo > img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        background: #e11836;
+    }
+    .text-1 {
+        position: absolute;
+        right: 2%;
+        top: 28%;
+        height: 19%;
+        width: 45%;
+        background-image: url(img/text_1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pack {
+        height: 37%;
+        width: 50%;
+        position: absolute;
+        top: 28%;
+        left: 0;
+    }
+    .pack > img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        left: -4%;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .new {
+        height: 22%;
+        position: absolute;
+        top: 63%;
+        z-index: 10;
+        left: -50%;
+        transition: left .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    .new img {
+        height: 100%;
+        max-height: 100%;
+        width: auto;
+        position: relative;
+    }
+    .text-2 {
+        height: 13%;
+        min-width: 58%;
+        width: 75%;
+        position: absolute;
+        bottom: 19%;
+        left: 21%;
+        background-image: url(img/text_2_land.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    a .but-inet {
+        height: 12%;
+        max-width: 22%;
+        position: absolute;
+        top: 54%;
+        right: 29%;
+        display: none;
+        transition: display .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    a .but-inet img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+    a .but-order {
+        height: 12%;
+        max-width: 22%;
+        position: absolute;
+        top: 54%;
+        right: 3%;
+        display: none;
+        transition: display .5s cubic-bezier(.1, -1.5, .1, 2.5) 0.5s;
+    }
+    a .but-order img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+    .registr {
+        position: absolute;
+        height: 10%;
+        top: 5%;
+        right: 2%;
+        color: #aeadad;
+        z-index: 10;
+    }
+    .registr > img {
+        position: relative;
+        top: 0%;
+        float: left;
+        height: 100%;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0%;
+        height: 18%;
+        width: 100%;
+        background: #e6e6e6;
+    }
+    .footer > img {
+        position: relative;
+        height: 69%;
+        width: 96%;
+        top: 30%;
+        left: 2%;
+    }
+}

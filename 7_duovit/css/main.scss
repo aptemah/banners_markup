@@ -1,0 +1,356 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*start page question*/
+//.startPage {
+//  width: 100%;
+//  height: 100%;
+//  background: #fff;
+//  text-align: center;
+//  position: absolute;
+//  z-index: 300;
+//}
+//
+//.whoAreYou {
+//  text-align: center;
+//  font-family: "Cuprum";
+//  font-size: 16px;
+//  color: #222;
+//  line-height: 0;
+//}
+//.startPage img {
+//  width: 25%;
+//  margin: 2%;
+//  display: inline-block;
+//  cursor: pointer;
+//}
+///* page question end*/
+//
+//
+//.wrap, .wrap_second {
+//  display: none;
+//}
+
+.wrap-man {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap-wooman{
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*body.before-load:after {*/
+/*content: "";*/
+/*position: absolute;*/
+/*display: block;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*background-image: url("../img/load.gif");*/
+/*background-size: 40px 40px;*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+/*}*/
+body {
+  font-size: 12px;
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+
+
+.logo-man,.logo-wooman,
+.button {
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.logo {
+  background-image: url(../img/p_main_logo.png);
+}
+
+.button {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 100;
+  background-color: transparent;
+}
+
+/*landscape man*/
+@media screen and (min-aspect-ratio: 1024/754) {
+  .wrap-man {
+    background-color: #000;
+    //background-position: 0 -10px;
+    background-image: url(../img/l_p_main_bg.png);
+    background-size: 100% auto;
+  }
+  .logo-man {
+    background-image: url(../img/p_main_logo.png);
+    height: 14%;
+    width: 60%;
+    background-size: contain;
+  }
+  .main-top-man {
+    top: 23%;
+    height: 27%;
+    left: 5%;
+    width: 32%;
+    background-image: url(../img/);
+    background-position: left;
+    background-size: contain;
+  }
+  .main-bottom-man {
+    height: 75%;
+    top: 5%;
+    width: 50%;
+    right: 0;
+    background-position: center;
+    background-size: contain;
+  }
+  .button {
+    background-size: auto 100%;
+    opacity: 0;
+  }
+  .button1 {
+    position: absolute;
+    width: 39%;
+    height: 10%;
+    top: 62%;
+    left: 7%;
+    background-image: url("../img/");
+  }
+  .button2 {
+    position: absolute;
+    width: 39%;
+    height: 10%;
+    top: 77%;
+    left: 7%;
+    background-image: url("../img/");
+  }
+
+
+  /*landscape wooman*/
+  .logo-wooman {
+    background-repeat: no-repeat;
+    background-image: url(../img/main_logo_land.png);
+    height: 14%;
+    width: 60%;
+    background-size: contain;
+  }
+
+  .wrap-wooman{
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/land_main_bg_2.png);
+
+  }
+  .main-top-wooman {
+    top: 23%;
+    height: 27%;
+    left: 5%;
+    width: 32%;
+    background-image: url(../img/wrap_2_man_always.png);
+    background-position: left;
+    background-size: contain;
+  }
+
+  .button1_second {
+    position: absolute;
+    width: 39%;
+    height: 12%;
+    top: 62%;
+    left: 7%;
+    background-image: url("../img/");
+    background-size: contain;
+  }
+  .button2_second {
+    position: absolute;
+    width: 37%;
+    height: 12%;
+    top: 77%;
+    left: 7%;
+    background-image: url("../img/");
+    background-size: contain;
+  }
+}
+/*portrait man*/
+@media screen and (max-aspect-ratio: 1024/754) {
+  .wrap-man {
+
+
+  }
+  .man{
+    background-position: center top;
+    background-size: auto 100%;
+    //background-size: 100%;
+    background-image: url(../img/l_p_main_bg.png);
+    height: 60%;
+    width: 100%;
+  }
+  .logo-man{
+    background-image: url(../img);
+    height: 40%;
+    width: 100%;
+    background-size: contain;
+    background-position-y: -15%;
+  }
+  .man-bottom{
+    position: absolute;
+    display: block;
+    top: 41%;
+    background-image: url('../img/p_blue_bg.png');
+    background-size: 100% 100%;
+    background-position: center bottom;
+    height: 59%;
+    width: 100%;
+    background-repeat: no-repeat;
+
+      }
+  .main-top-man {
+    top: 24%;
+    height: 14%;
+    left: 12%;
+    width: 80%;
+    background-image: url(../img/);
+    background-position: center;
+    background-size: contain;
+  }
+  .button {
+    background-position: center;
+    background-size: contain;
+  }
+  .button1 {
+    position: absolute;
+    left: 1%;
+    bottom: 6%;
+    height: 7%;
+    width: 48%;
+    background-image: url("../img/");
+    background-size: contain!important;
+  }
+  .button2{
+    position: absolute;
+    right: 1%;
+    bottom: 6%;
+    height: 7%;
+    width: 48%;
+    background-image: url("../img/");
+    background-size: contain;
+  }
+
+
+
+  /*portrait wooman*/
+
+  .wrap-wooman {
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-image: url(../img/main_bg_2.png);
+  }
+  .logo-wooman {
+    background-image: url(../img/main_logo.png);
+    background-repeat: no-repeat;
+    height: 37%;
+    width: 100%;
+    background-size: contain;
+  }
+  .main-top-wooman {
+    top: 17%;
+    height: 14%;
+    left: 12%;
+    width: 80%;
+    background-image: url(../img/wrap_2_man_always.png);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .button1_second {
+    position: absolute;
+    left: 1%;
+    bottom: 6%;
+    height: 7%;
+    width: 48%;
+    background-image: url("../img/button_left_2.png");
+    background-size: contain;
+  }
+  .button2_second {
+    position: absolute;
+    right: 1%;
+    bottom: 6%;
+    height: 7%;
+    width: 48%;
+    background-image: url("../img/button_righ_2.png");
+    background-size: contain;
+  }
+
+}
+
+
+

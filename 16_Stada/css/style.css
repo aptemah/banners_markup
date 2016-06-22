@@ -1,0 +1,281 @@
+/*
+	Task Video Hondroxid
+	Roman Moskalenko
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+	outline:none;
+}
+
+body {
+	overflow: hidden;
+}
+
+.wrapper {
+	display: block;
+	overflow: hidden;
+}
+
+.logoWrapp {
+	width: 100%;
+	-webkit-transition: transform 1s;
+			transition: transform 1s;
+}
+/* .before-load .logoWrapp {
+	-webkit-transform: translateX(-200%);
+			transform: translateX(-200%);
+} */
+
+.logo {
+	width: 300px;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+.label {
+	width: 450px;
+	font-family: 'HelvThin';
+	font-size: 40px;
+	color: #fff;
+	margin-left: 50px;
+	margin-top: 80px;
+	-webkit-transition: opacity 1s;
+			transition: opacity 1s;
+}
+.before-load .label {
+	opacity: 0;
+}
+
+.btn-next-div {
+	-webkit-transition: opacity 1s 1.5s;
+			transition: opacity 1s 1.5s;
+}
+.before-load .btn-next-div {
+	opacity: 0;
+}
+
+.slide {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100% !important;
+	height: 100%;
+	margin: 0 !important;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-family: 'HelvThin';
+}
+
+.slide:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.video {
+	position: absolute;
+	width: 600px;
+	top: 170px;
+	right: 50px;
+	-webkit-transition: opacity 1s 1s;
+			transition: opacity 1s 1s;
+}
+.before-load .video {
+	opacity: 0;
+}
+
+.btn-next {
+	width: 200px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.btn-next2 {
+	width: 200px;
+	margin: auto;
+	display: none;
+}
+
+.gifka {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.gifka img {
+	height: 100%;
+	max-width: 100%;
+	max-width: 100%;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.timer {
+	font-family: Tahoma;
+	font-size: 18px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	color: #fff;
+}
+
+.next {
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	text-align: center;
+	z-index: 999;
+}
+
+.gifka a {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+.support {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20;
+	font-family: 'HelvThin';
+	color: #fff;
+	font-size: 23px;
+}
+
+@media screen and (orientation: landscape) {
+	body {
+		background: url('../img/bgL.jpg');
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.slide {
+		font-size: 80px;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	body {
+		background: url('../img/bgP.jpg');
+		background-size: cover;
+		background-position: center center;
+		text-align: center;
+	}
+
+	.logoWrapp {
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.logoWrapp .logo {
+		margin: auto;
+		width: 400px;
+	}
+
+	.label {
+		width: 600px;
+		text-align: center;
+		margin: auto;
+		margin-top: 100px;
+	}
+
+	.slide {
+		font-size: 80px;
+	}
+
+	.video {
+		position: relative;
+		margin: 0;
+		right: 0;
+		left: 0;
+		top: 0;
+		width: auto;
+		margin: auto;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.btn-next-div {
+		width: 100%;
+		text-align: right;
+		margin-top: 50px;
+	}
+
+	.btn-next {
+		margin-right: 50px;
+	}
+
+	.btn-next-div img {
+		height: 120px;
+		width: 320px;
+	}
+}
+
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+	.label {
+		width: 350px;
+		font-size: 35px;
+	}
+
+	.video {
+		top: 120px;
+		width: 450px;
+	}
+
+	.slide {
+		width: 100%;
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+	.btn-next {
+		width: 450px;
+	}
+
+	.timer {
+		font-size: 30px;
+	}
+
+	.label {
+		font-size: 50px;
+	}
+
+	.btn-next2 {
+		width: 400px;
+	}
+
+	.support {
+		font-size: 30px;
+	}
+
+	.slide {
+		width: 100%;
+		height: 100%;
+		font-size: 100px;
+	}
+}
+
+@font-face {
+	font-family: 'HelvThin';
+	src: url('../font/helveticaneuecyrthin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'HelvLight';
+	src: url('../font/helveticaneuecyrlight.ttf') format('truetype');
+}

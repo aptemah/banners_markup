@@ -1,0 +1,255 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+div {
+          transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+.wrap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0.7em 1.5em 0.7em;
+  border-radius: 500px;
+  background-color: #912846;
+  cursor: pointer;
+  z-index: 100;
+}
+.button img {
+  height: 1.5em;
+  margin: 0em 0em -0.3em 0.5em;
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  body {
+    font-size: 12px;
+ }
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+
+.logo,
+.wrap,
+.bg-portrait,
+.text,
+.pan,
+.buttons {
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.wrap {
+    background-image: url("../img/bg.jpg");
+}
+.bg-portrait {
+    background-image: url("../img/bg_p.jpg");
+}
+.logo {
+    width: 100%;
+    background-image: url("../img/logo.png");
+    background-size: auto 100%;
+    background-position: center;
+    opacity: 1;
+}
+body.before-load .logo {
+    opacity: 0;
+}
+.text {
+    position: absolute;
+    background-image: url("../img/text.png");
+    opacity: 1;
+}
+body.before-load .text {
+    opacity: 0;
+}
+.pan {
+    background-image: url("../img/pan.png");
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+body.before-load .pan {
+  opacity: 0;
+}
+.buttons {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    z-index: 1000;
+}
+.button {
+    white-space: nowrap;
+    margin: 0 0.5em;
+}
+.button1 {
+
+}
+.button2 {
+
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .wrap {
+        background-color: #000;
+        background-position: center;
+    }
+    .bg-portrait {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: right top;
+    }
+    .logo {
+        height: 21%;
+        width: 50%;
+        top: 5%;
+        background-position: center;
+    
+        background-size: 80% auto;
+}
+    .text {
+        height: 21%;
+        top: 27%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position: center;
+}
+    .pan {
+    height: 50%;
+    
+    width: 50%;
+    bottom: 0;
+    background-size: 80% auto;
+}
+    .buttons {
+        right: 0;
+        bottom: 6%;
+        width: 60%;
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .wrap {
+        background-position: center;
+    }
+    .bg-portrait {
+        top: 0;
+        height: 81%;
+        width: 100%;
+        background-size: cover;
+        background-position: 83% center;
+    }
+    .bg-portrait:before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+41,0.65+100,0.65+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 41%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(0,0,0,0)), color-stop(41%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 41%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 41%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 41%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 41%,rgba(0,0,0,0.65) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9*/
+    }
+    .logo {
+        height: 10%;
+        top: 47%;
+    }
+    .text {
+        height: 14%;
+        top: 59%;
+        width: 100%;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .pan {
+        bottom: 0;
+        height: 23%;
+        width: 100%;
+    }
+    .buttons {
+        right: 0;
+        bottom: -13%;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,289 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    body {
+        font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    body {
+        font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+    body {
+        font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+    body {
+        font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+    body {
+        font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+    body {
+        font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+    body {
+        font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    body {
+        font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+    body {
+        font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+    body {
+        font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    body {
+        font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 26px; } }
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .container{
+        position: absolute;
+        background-color: #ffffff;
+    }
+    .header{
+        height: 30%;
+        width: 100%;
+    }
+    .header-top{
+        height: 67%;
+        width: 100%;
+        background-color: #000000;
+        background-image: url("../img/main-logo.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: auto 80%;
+        background-size: auto 80%;
+    }
+    .header-bottom{
+        height: 35%;
+        width: 100%;
+        background-color: #902646;
+        background-image: url("../img/main-description.png");
+        -webkit-background-size: auto 53%;
+        background-size: auto 67%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .main{
+        background-color: #000000;
+        height: 57%;
+        width: 100%;
+    }
+    .main-top{
+        height: 54%;
+        width: 100%;
+        background-image: url("../img/main-img.jpg");
+        -webkit-background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    .main-bottom{
+        display: block;
+        height: 21%;
+        width: 100%;
+        background-color: #c5c6c6;
+        background-image: url(../img/bottom-description.png);
+        -webkit-background-size: cover;
+        background-size: auto 86%;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+    }
+    .footer{
+        height: 14%;
+        width: 100%;
+        background-color: #000000;
+        background-image: url(../img/footer-text.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: auto 70%;
+        background-size: auto 57%;
+        background-position: center center ;
+    }
+    .landscape-left-text{
+        display: none;
+    }
+    .landscape-right-text{
+        display: none;
+    }
+    .button-main{
+        position: absolute;
+        left: 50%;
+        bottom: -15%;
+        -webkit-transform:translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+        height:9%;
+        width:68%;
+        background:#891345;
+        border: 2px solid #C1C2C2;
+        color:white;
+        font-size:1em;
+        font-weight:bold;
+        -webkit-appearance: button;
+        -webkit-transition: -webkit-transform 1s ease-out 0.5s;
+        transition: transform 1s ease-out 0.5s;
+    }
+    .button-move{
+        -webkit-transform: translate(-50%, -320%);
+        transform: translate(-50%, -320%);
+    }
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .container{
+        position: absolute;
+        background-color: #000000;
+        padding: 0.5em;
+    }
+    .header{
+        position: relative;
+        height: 31%;
+        width: 100%;
+    }
+    .header-top{
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        height: 91%;
+        width: 30%;
+        /* background-color: #000000; */
+        background-image: url("../img/landscape-main-logo-black-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: auto 80%;
+        background-size: contain;
+        background-position: left;
+        z-index: 100;
+    }
+    .header-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 53%;
+        width: 90%;
+        margin-top: 2.5em;
+        background-color: #891345;
+        background-image: url("../img/landscape-header-text.png");
+        -webkit-background-size: auto 53%;
+        background-size: auto 76%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main{
+        position: relative;
+        height: 48%;
+        width: 100%;
+    }
+    .main-top{
+        height: 100%;
+        width: 100%;
+        background-image: url("../img/landscape-main-img.jpg");
+        -webkit-background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    .main-bottom{
+        display: none;
+        height: 30%;
+        width: 100%;
+        background-color: #c5c6c6;
+        background-image: url(../img/bottom-description.png);
+        -webkit-background-size: cover;
+        background-size: auto 67%;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+    }
+    .button-main{
+        position: absolute;
+        top: 28%;
+        right: 0;
+         -webkit-transform: translateX(200%);
+         transform: translateX(200%);
+        padding: 1em 1em;
+        background: #891345;
+        color: white;
+        border: 2px solid #C1C2C2;
+        font-size: 1em;
+        font-weight: bold;
+        -webkit-appearance: button;
+        -webkit-transition: -webkit-transform 1s ease-out 0.5s;
+        transition: transform 1s ease-out 0.5s;
+    }
+    .button-move{
+        -webkit-transform: translateX(-10%);
+        transform: translateX(-10%);
+    }
+    .footer{
+        position: relative;
+        height: 30%;
+        width: 100%;
+      }
+    .landscape-left-text{
+        background-image: url("../img/landscape-left-img.png");
+        background-repeat: no-repeat;
+        height: 70%;
+        width: 43%;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 5%;
+    }
+    .landscape-right-text{
+        background-image: url("../img/landscape-right-img.png");
+        height: 67%;
+        width: 46%;
+        background-size: contain;
+        position: absolute;
+        background-position: right top;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 5%;
+    }
+
+}
+
+
+
+

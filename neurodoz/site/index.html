@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Нейродоз</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body onload="rubberFont()" onresize="rubberFont()">
+    <div class="wrap">
+        <div class="ladybugs"></div>
+        <div class="text-wrap">
+            <span class="text1 rubber-font">у божьих коровок</span>
+            <span class="text2 rubber-font">половой акт</span>
+            <span class="text3 rubber-font">длится</span>
+            <span class="text4 rubber-font">9 часов</span>
+            <span class="text5 rubber-font">А у тебя?</span>
+        </div>
+        <button id="next-button"><div><span class="rubber-font">Далее</span> <img src="img/arrow.png"></div></button>
+    </div>
+    <div class="wrap2">
+        <div class="text21"></div>
+        <div class="text22"></div>
+        <div class="pack"></div>
+        <button class="button1"><div><span class="rubber-font">Перейти<br class="brake-block"> в интернет<img src="img/arrow.png"></span></div></button>
+        <button class="button2"><div><span class="rubber-font">Узнать больше<img src="img/arrow_orange.png"></span></div></button>
+        <div class="text23"></div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+    $("#next-button").on("click", function(){$(".wrap").hide(); $(".wrap2").show();})
+    </script>
+</body>
+</html>

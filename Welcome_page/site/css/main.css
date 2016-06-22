@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;
+}
+body {
+  font-size: 12px; }
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 22px; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Geneva, Arial, Helvetica, sans-serif; 
+}
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.text1 {
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    padding: 0 1em;
+}
+.text2 {
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0.5em;
+    padding: 0 1em;
+}
+.divider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-image: url(../img/divider.png);
+    background-size: 100% 100%;
+    margin: 2em 0;
+}
+.support {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #929292;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+.logo {
+    text-align: center;
+    margin-top: 1em;
+    height: 5em;
+}
+.logo img {
+    margin: auto;
+    height: 100%;
+}
+.telephon {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+    /*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg_l.jpg");
+  }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg.jpg");
+  }
+}

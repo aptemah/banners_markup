@@ -1,0 +1,254 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.buttons {
+
+}
+.button {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 100;
+}
+.button1{
+    background-image: url(../img/button_more.png);
+}
+.button2{
+    background-image: url(../img/button_inet.png);
+}
+.button img {
+  height: 1.5em;
+  margin: 0em 0em -0.3em 0.5em;
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  body {
+    font-size: 12px;
+ }
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+
+.wrap,
+.text,
+.date,
+.buttons {
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.boom {
+    height: 100%;
+    width: 100%;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    opacity: 0;
+}
+.text{
+    background-image: url(../img/text.png);
+}
+.date{
+    background-image: url(../img/date.png);
+}
+.group {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/group.png);
+    background-repeat: no-repeat;
+}
+.buttons {
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    display: block;
+    position: relative;
+}
+.button {
+    white-space: nowrap;
+    margin: 0.5em 0;
+    background-size: auto 100%;
+    height: 100%;
+    width: 0%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: right;
+    display: inline-block;
+    padding: 0;
+}
+.button1 {
+
+}
+.button2 {
+
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .wrap {
+        background-color: #000;
+        background-position: center;
+    }
+    .boom {
+        background-image: url(../img/boom_land.png);
+        background-size: auto 146%;
+        background-position: center 46%;
+    }
+    .group {
+        background-size: auto 115%;
+        background-position: center 0%;
+    }
+    .text {
+        background-size: auto 100%;
+        height: 6%;
+        width: 50%;
+        bottom: .5em;
+        left: .5em;
+    }
+    .date {
+        background-size: auto 100%;
+        height: 5%;
+        width: 50%;
+        bottom: 10%;
+        left: .5em;
+    }
+    .buttons {
+        right: -1em;
+        bottom: 66%;
+        text-align: right;
+        font-size: 0.7em;
+        height: 15%;
+    }
+    .button1 {
+        right: 0;
+    }
+    .button2 {
+        right: 0;
+        bottom: -139%;
+    }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .wrap {
+        background-position: center;
+    }
+    .boom {
+        background-image: url(../img/boom.png);
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .group {
+        width: 100%;
+        background-size: auto 71%;
+        background-position: center 31%;
+    }
+    .text {
+        background-size: auto 100%;
+        background-position: center;
+        height: 6%;
+        width: 100%;
+        bottom: 5%;
+    }
+    .date {
+        background-size: auto 100%;
+        background-position: center;
+        height: 4%;
+        width: 100%;
+        top: .5em;
+    }
+    .buttons {
+        right: 0;
+        bottom: 22%;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .button1 {
+        background-position: left center;
+        left: 5%;
+        transform: translateY(9%);
+    }
+    .button2 {
+        right: 0;
+    }
+    .for-landscape {
+        display: none;
+    }
+}

@@ -1,0 +1,183 @@
+html, body {
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 12px;
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    body {
+        font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    body {
+        font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+    body {
+        font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+    body {
+        font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+    body {
+        font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+    body {
+        font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+    body {
+        font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    body {
+        font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+    body {
+        font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+    body {
+        font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    body {
+        font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 26px; } }
+
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .main{
+        height:100%;
+        width:100%;
+        overflow: hidden;
+        background-image: url("../img/p-bg-all.jpg");
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position: center bottom;
+        position: relative;
+    }
+    .header {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        height: 33%;
+        background-image: url("../img/p-header-text.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 20%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom:0;
+        left:0;
+        height:55%;
+        width:100%;
+    }
+    .footer .button-site {
+        background-image: url("../img/p-button.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 30%;
+        height: 4em;
+        position: absolute;
+        bottom: 3.2em;
+        left: 1em;
+        cursor: pointer;
+    }
+    .footer .button-internet {
+        background-image: url("../img/p-button-enter.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 28%;
+        height: 2em;
+        position: absolute;
+        bottom: 1.5em;
+        left: 1em;
+        cursor: pointer;
+    }
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .main{
+        height:100%;
+        width:100%;
+        overflow: hidden;
+        background-image: url("../img/l-bg.jpg");
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position: right bottom;
+        position: relative;
+    }
+    .header {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        width: 100%;
+        height: 32%;
+        background-image: url("../img/l-header-text.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left 20%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom:0;
+        left:0;
+        height:55%;
+        width:100%;
+    }
+    .footer .button-site {
+        background-image: url("../img/l-button.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 18%;
+        height: 2em;
+        position: absolute;
+        bottom: 0.95em;
+        left: 2%;
+        cursor: pointer;
+    }
+    .footer .button-internet {
+        background-image: url("../img/l-button-enter.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        width: 18%;
+        height: 0.7em;
+        position: absolute;
+        bottom: 0.2em;
+        left: 2%;
+        cursor: pointer;
+    }
+}
+
+
+

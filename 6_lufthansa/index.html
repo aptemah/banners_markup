@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>Lufthansa</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="text"></div>
+        <div class="text2"></div>
+        <div class="logo">
+            <div class="text3"></div>
+        </div>
+        <button class="button button1">Узнать подробнее</button>
+        <button class="button button2">Выйти в интернет</button>
+    </div>
+    <script>
+    $(function(){
+        setTimeout(function(){$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))},5000)
+    });
+    $(window).load( function(){
+        $("body").removeClass("before-load");
+        $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+    });
+        </script>
+</body>
+</html>

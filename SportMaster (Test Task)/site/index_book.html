@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>СПОРТМАСТЕР</title>
+        <script src="framework/jQuery1.11.2.js"></script><!-- Библиотека jQuery-->
+        <link href="main_book.css" rel="stylesheet"><!-- Основной файл со стилями -->
+    </head>
+    <body onload="checkOrientation()"><!-- При загрузке запускаем функцию проверки ориентации экрана-->
+        <img class="bgb" src="img/bg_book.jpg" alt=""><!-- Картинка фона-->
+        <div class="wrap"><!-- Контейнер со всеми элементами -->
+            <div class="header"> <img class="logo" src="img/logo.png" alt=""> </div> <!-- Шапка -->
+            <img class="cont1b" src="img/cont1b.png" alt=""><!-- Картинка 1 "товары про" -->
+            <img class="cont2b" src="img/cont2b.png" alt=""><!-- Картинка 2 "кроссовки" -->
+            <img class="cont3b" src="img/cont3b.png" alt=""><!-- Картинка 3 "майка" -->
+            <img class="cont4b" src="img/cont4b.png" alt=""><!-- Картинка 4 "пульсометр" -->
+            <img class="logosm" src="img/logosm.png" alt=""><!-- Картинка с логотипом "Спортмастер" -->
+        </div><!-- Конец контейнера со всеми элементами -->
+        <script type="text/javascript">
+            //global variables: "timer"
+            //Функция проверки ориентации экрана
+            function checkOrientation(){
+                var wrap = document.getElementsByTagName("DIV")[0];
+                var Height = wrap.clientHeight;
+                var Width = wrap.clientWidth;
+                if (Height < Width) {//Если высота меньше ширины, переходим на index_album.html
+                document.location.href = "index_album.html";
+                clearInterval(timer);//Останавливаем таймер
+                throw ("Orientation changing...");//Прерываем выполнение скрипта
+                };
+            }
+            var timer = setInterval(function(){ checkOrientation ();}, 500);//Запускаем функцию проверки ориентации экраа по таймеру
+                $(document).ready(function(){//Выдвигаем элементы
+                    $(".header").css("top", "0");
+                    $(".logo").css("left", "1%");
+                    $(".cont1b").css("right", "0%");
+                    $(".cont2b").css("right", "0%");
+                    $(".cont3b").css("left", "0%");
+                    $(".cont4b").css("right", "0%");
+                    $(".logosm").css("bottom", "1%");
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,364 @@
+/*//?! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ *!/*/
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../img/portrait/main-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-size: 12px;
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    body {
+        font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    body {
+        font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    body {
+        font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+    body {
+        font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+    body {
+        font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+    body {
+        font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+    body {
+        font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+    body {
+        font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    body {
+        font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+    body {
+        font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+    body {
+        font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    body {
+        font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 26px; } }
+
+
+
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+   .header{
+    
+        height: 15%;
+        width: 100%;
+        background-image: url('../img/portrait/main-logo.png');
+        background-size: 45%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .main{
+        height: 68%;
+        width: 100%;
+         background-image: url("../img/portrait/main-text.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 80%;
+        background-size: 80%;
+        background-position: center 10%;
+     }
+    .move{
+        -webkit-transform: translateX(-19.5em);
+        -moz-transform: translateX(-19.5em);
+        -ms-transform: translateX(-19.5em);
+        -o-transform: translateX(-19.5em);
+        transform: translateX(-19.5em);
+    }
+     .button{
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 70%;
+        white-space: pre-line;
+        width: 9em;
+        height: 3.4em;
+        border: none;
+        background-color: #BB5D2A;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+     .button-internet{
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 70%;
+        width: 9em;
+        height: 3.4em;
+        border: none;
+        white-space: pre-line;
+        background-color: #BB5D2A;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+    .footer{
+        height: 17%;
+        width: 100%;
+        background-image: url("../img/portrait/text-bottom.png");
+        -webkit-background-size: contain;
+        background-size: auto 60%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}
+
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .header, .main, .footer{
+        display: none;
+    }
+    .container{
+        background-image: url("../img/landscape/main-bg.jpg");
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+    .button{
+        display: none;
+    }
+    .move{
+        -webkit-transform: translateX(16em);
+        -moz-transform: translateX(16em);
+        -ms-transform: translateX(16em);
+        -o-transform: translateX(16em);
+        transform: translateX(16em);
+    }
+   .button-internet-l{
+       display: block;
+       height: 3em;
+       position: absolute;
+       left: 1em;
+       top: 7.6em;
+       width: 10em;
+       background-image: url("../img/landscape/button-internet.jpg");
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center;
+       z-index: 20000;
+    }
+     .button-more{
+         display: block;
+         position: absolute;
+         height: 3em;
+         top: 4.7em;
+         left: 1em;
+         width: 10em;
+         background-image: url("../img/landscape/button-more.jpg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         z-index: 10000;
+    }
+    .l-header{
+        height: 27%;
+        width: 100%;
+    }
+    .l-header-top{
+        height: 47%;
+        width: 100%;
+        background-image: url("../img/landscape/main-logo.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 22% auto;
+        background-size: 19% auto;
+        background-position: center;
+    }
+    .l-header-bottom{
+        height: 53%;
+        width: 100%;
+        background-image: url("../img/landscape/fitness-text.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60% auto;
+    }
+    .l-main{
+        position: relative;
+        margin-top: 1%;
+        height: 46%;
+        width: 100%;
+        background-image: url("../img/l-main-bg.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: left 10%;
+    }
+    .l-main-head{
+        height: 52%;
+        width: 100%;
+        background-image: url("../img/landscape/kurort-text.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: 43% auto;
+        background-position: center;
+        background-color: rgba(39,37,176,0.6);
+    }
+    .l-main-foot{
+        height: 48%;
+        width: 100%;
+        background-image: url("../img/landscape/date-text.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: 45%;
+        background-position: 95% center;
+    }
+    .l-footer{
+        position: absolute;
+        height: 27%;
+        width: 100%;
+        background-image: url("../img/landscape/text-bottom.png");
+        -webkit-background-size: 46%;
+        background-size: 46%;
+        background-repeat: no-repeat;
+        background-position: 96% top;
+        z-index: 2;
+    }
+}
+
+
+/*iphone 4 landscape style*/
+@media screen and (min-width:470px) and (max-width:490px){
+  .button-internet-l{
+      display: block;
+       height: 3em;
+       position: absolute;
+       left: 1em;
+       top: 7.9em;
+       width: 10em;
+       background-image: url("../img/landscape/button-internet.jpg");
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center;
+      z-index: 20000;
+    }
+     .button-more{
+         display: block;
+         position: absolute;
+         height: 3em;
+         top: 4.8em;
+         left: 1em;
+         width: 10em;
+         background-image: url("../img/landscape/button-more.jpg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         z-index: 10000;
+    }
+    .l-header-bottom{
+        height: 53%;
+        width: 100%;
+        background-image: url("../img/landscape/fitness-text.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80% auto;
+    }
+    .l-main-head{
+        height: 52%;
+        width: 100%;
+        background-image: url("../img/landscape/kurort-text.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: 53% auto;
+        background-position: center;
+        background-color: rgba(39,37,176,0.6);
+    }
+    .l-main-foot{
+        height: 86%;
+        width: 100%;
+        background-image: url("../img/main-text.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: auto 83%;
+        background-size: auto 83%;
+        background-position: 96% 97%;
+    }
+   
+   
+}
+
+/*ipad style landscape*/
+@media screen and (min-width: 1000px) and (max-width:1100px) {
+  .button-internet-l{
+       display: block;
+       height: 3em;
+       position: absolute;
+       left: 1em;
+       top: 10.5em;
+       width: 10em;
+       background-image: url("../img/landscape/button-internet.jpg");
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center;
+      z-index: 10000;
+    }
+     .button-more{
+         display: block;
+         position: absolute;
+         height: 3em;
+         top: 7.5em;
+         left: 1em;
+         width: 10em;
+         background-image: url("../img/landscape/button-more.jpg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         z-index: 20000;
+    }
+}
+@media screen and (min-width: 465px) and (max-width: 495px) and (orientation: portrait){
+    .button-more{
+        display: none;
+    }
+    .button-internet-l{
+        display: none;
+    }
+}
+@media screen and (min-width: 569px) and (max-width: 800px) and (orientation: portrait){
+    .main{
+        -webkit-background-size: 62%;
+        background-size: 62%;
+    }
+}

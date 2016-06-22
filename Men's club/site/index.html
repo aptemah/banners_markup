@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body onload="rubberFontInPercent(), rubberFont(), addClassesToElements()" onresize="rubberFontInPercent(), rubberFont()">
+    <div class="wrap">
+        <div class="text1"></div>
+        <div class="text2"></div>
+        <div class="text3"></div>
+        <div class="tracery"></div>
+        <div class="button1"><div><span class="rubber-font">Перейти в интернет</span></div></div>
+        <div class="button2"><div><span class="rubber-font">Узнать больше</span></div></div>
+    </div>
+    <div class="startPage">
+        <p class="whoAreYou">Кто вы?</p>
+        <img src="img/m.png" class="m" control="man" alt="">
+        <img src="img/w.png" class="w" control="woman" alt="">
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+    var classes112 = ["wrap",
+                      "tracery",
+                      "text1",
+                      "text2",
+                      "text3",
+                      "button1",
+                      "button2"
+                ];
+    var functionsOnOrientationChange112 = [function(){}
+                ];
+      $(".m").click(function(){
+        $(".startPage").hide();
+        $(".wrap").hide();
+        setTimeout(function(){$(".wrap").show();}, 100);
+      });
+    </script>
+</body>
+</html>

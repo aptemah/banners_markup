@@ -1,0 +1,224 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+  .text {
+    opacity: 0;
+  }
+  .logo {
+            transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+  }
+  .button {
+    position: absolute;
+    display: inline-block;
+    font-family: opensans;
+    font-size: 1em;
+    color: #090964;
+    background-color: #ffb300;
+    border: none;
+    padding: .5em 1em;
+  }
+    /*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg_l.jpg");
+    background-position: top right;
+  }
+  .text {
+    position: absolute;
+    display: inline-block;
+    left: 1em;
+    top: 1em;
+    background-image: url(../img/text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 64%;
+    width: 50%;
+  }
+  .text2 {
+    position: absolute;
+    display: inline-block;
+    right: 1em;
+    top: 1em;
+    background-image: url(../img/text2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 3%;
+    width: 50%;
+  }
+  .logo {
+    position: absolute;
+    display: inline-block;
+    bottom: 5em;
+    right: 1em;
+    left: 1em;
+    padding-left: 1em;
+    background-image: url(../img/logo.png);
+    background-size: auto 88%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-bottom: solid 3px #ffb300;
+    height: 34%;
+    width: auto;
+  }
+  .text3 {
+    position: absolute;
+    display: inline-block;
+    bottom: -12%;
+    left: 0;
+    background-image: url(../img/text3_l.png);
+    background-size: auto 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 7%;
+    width: 32%;
+  }
+  .button1 {
+    bottom: 1em;
+    left: 1em;
+  }
+  .button2 {
+    bottom: 1em;
+    right: 1em;
+  }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg_p.jpg");
+    background-position: top right;
+  }
+  .text {
+    position: absolute;
+    display: inline-block;
+    left: 1em;
+    top: 1em;
+    background-image: url(../img/text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 41%;
+    width: 55%;
+  }
+  .text2 {
+    position: absolute;
+    display: inline-block;
+    right: 1em;
+    top: 1em;
+    background-image: url(../img/text2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 2%;
+    width: 33%;
+  }
+  .logo {
+    position: absolute;
+    display: inline-block;
+    bottom: 5em;
+    right: 1em;
+    left: 1em;
+    padding-left: 1em;
+    background-image: url(../img/logo.png);
+    background-size: auto 88%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-bottom: solid 3px #ffb300;
+    height: 21%;
+    width: auto;
+  }
+  .text3 {
+    position: absolute;
+    display: inline-block;
+    bottom: -12%;
+    left: 0;
+    background-image: url(../img/text3_p.png);
+    background-size: auto 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 7%;
+    width: 32%;
+  }
+  .button1 {
+    bottom: 1em;
+    left: 1em;
+  }
+  .button2 {
+    bottom: 1em;
+    right: 1em;
+  }
+}
+body {
+    font-size: 12px;
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 22px;
+  }
+}
+@font-face {
+  font-family: "opensans";
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/flowtype.js"></script>
+</head>
+<body onload="rubberFontInPercent(), rubberFont(), addClassesToElements()" onresize="rubberFontInPercent(), rubberFont()">
+    <div class="wrap">
+        <div class="main-content"></div>
+        <div class="button"></div>
+        <div class="footer">
+            <span class="footer-text-port">Установите приложение La Moda и получите на первую покупку скидку 10 %
+            </span>
+            <span class="footer-text-land">Установите приложение La Moda и получите скидку 10 % на первую покупку
+            </span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+    var classes112 = ["wrap",
+                      "main-content",
+                      "button",
+                      "footer",
+                      "footer-text-port",
+                      "footer-text-land"
+                ];
+    var functionsOnOrientationChange112 = [function(){$('.footer-text-port').flowtype({
+            minFont   : 6,
+            maxFont   : 30,
+            fontRatio : 13
+        });},
+    function(){$('.footer-text-land').flowtype({
+            minFont   : 6,
+            maxFont   : 30,
+            fontRatio : 32
+        });}
+                ];
+    </script>
+</body>
+</html>

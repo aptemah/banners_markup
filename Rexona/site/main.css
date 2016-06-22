@@ -1,0 +1,546 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;
+}
+div {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+span {
+  box-sizing: border-box;
+}
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.wrap-l {
+  background-image: url("img/bg_l.jpg");
+}
+.green-flash {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #d7f003;
+  opacity: 0;
+  z-index: 100;
+}
+.white-flash {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: 100;
+}
+.mask-for-display {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url("img/mask.png");
+  background-size: 100% 100%;
+  }
+  .nubers-on-display {
+  position: absolute;
+  display: inline-block;
+  background-image: url("img/display.png");
+  background-size: 182% 320%;
+  background-position: 150% 150%;
+  background-repeat: no-repeat;
+  animation-name: display;
+  -webkit-animation-name: display;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  }
+.logo-rexona {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  padding: 0% 2% 2%;
+  text-align: left;
+}
+.logo-rexona img {
+  display: inline-block;
+  float: left;
+  max-height: 100%;
+  max-width: 20%;
+}
+.logo-rexona span {
+  position: absolute;
+  display: inline-block;
+  width: 79%;
+  bottom: 0;
+  font-size: 10px;
+  font-family: "Roboto-Light";
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  line-height: 1.2;
+  animation-name: animText5;
+  -webkit-animation-name: animText5;
+  animation-duration: 7s;
+  -webkit-animation-duration: 7s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+}
+.text-1, .text-2, .text-3, .text-4 {
+  font-family: "Roboto-Light";
+  display: block;
+  color: rgb(11, 45, 111);
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+.text-1 {
+  animation-name: animText1;
+  -webkit-animation-name: animText1;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+}
+.text-2 {
+  animation-name: animText2;
+  -webkit-animation-name: animText2;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+}
+.text-3 {
+  animation-name: animText3;
+  -webkit-animation-name: animText3;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+}
+.text-4 {
+  animation-name: animText4;
+  -webkit-animation-name: animText4;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+}
+.nepoteka {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-image: url("img/logo_nepoteka.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-name: animText5;
+  -webkit-animation-name: animText5;
+  animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  z-index: 200;
+}
+.button1, .button2 {
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  margin: 3% 0;
+  cursor: pointer;
+  animation-name: animText5;
+  -webkit-animation-name: animText5;
+  animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  -webkit-animation-timing-function: cubic-bezier(.25,.1,0,1.11);
+  z-index: 200;
+}
+.button1 {
+  background-color: #d7f003;
+}
+.button1:hover {
+  background-color: #c3d902;
+}
+.button2 {
+  background-color: #ffffff;
+}
+.button2:hover {
+  background-color: #e1eff3;
+}
+.button1 span, .button2 span {
+  position: relative;
+  display: block;
+  top: 35%;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto-Light";
+  color: rgb(54, 79, 141);
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/704) {
+  .wrap {
+    background-image: url("img/bg_l.jpg");
+  }
+  .nubers-on-display {
+    height: 26%;
+    width: 21%;
+    top: 47%;
+    left: 14%;
+  }
+  .text-1, .text-2, .text-3, .text-4 {
+    height: 7%;
+    top: 17%;
+  }
+  .logo-rexona {
+    height: 21%;
+  }
+  .logo-rexona span {
+    font-size: 10px;
+  }
+  .button1, .button2 {
+    width: 40%;
+    height: 13%;
+    left: 30%;
+    top: 40%;
+    margin: 2% 0;
+  }
+  .nepoteka {
+    height: 30%;
+    top: 4%;
+  }
+  body {-webkit-text-size-adjust: none;}
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/704) {
+  .wrap {
+    background-image: url("img/bg_p.jpg");
+  }
+  .nubers-on-display {
+    height: 16%;
+    width: 31%;
+    top: 42%;
+    left: 18%;
+  }
+  .text-1, .text-2, .text-3, .text-4{
+    height: 4%;
+    top: 17%;
+  }
+  .logo-rexona {
+    height: 16%;
+  }
+  .button1, .button2 {
+    width: 66%;
+    height: 9%;
+    left: 17%;
+    top: 37%;
+  }
+  .nepoteka {
+    height: 18%;
+    top: 9%;
+  }
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(fonts/Roboto-Light.ttf);
+}
+
+@keyframes display {
+  0% {
+    background-position: 150% 150%;
+  }
+  20% {
+    background-position: 105% 105%;
+  }
+  40% {
+    background-position: 69% 67%;
+  }
+  60% {
+    background-position: 32% 33%;
+  }
+  80% {
+    background-position: -7% -7%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+@-webkit-keyframes display {
+  0% {
+    background-position: 150% 150%;
+  }
+  20% {
+    background-position: 105% 105%;
+  }
+  40% {
+    background-position: 69% 67%;
+  }
+  60% {
+    background-position: 32% 33%;
+  }
+  80% {
+    background-position: -7% -7%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+@-webkit-keyframes animText1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animText1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animText2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animText2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animText3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animText3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animText4 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes animText4 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@-webkit-keyframes animText5 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animText5 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

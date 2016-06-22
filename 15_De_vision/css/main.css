@@ -1,0 +1,253 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+.logo,
+.decor,
+.text,
+.text2,
+.man,
+.button,
+.woman {
+  display: inline-block;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  background-image: url(../img/logo.png);
+  background-position: center;
+}
+.decor {
+  top: 0;
+  left: 0;
+  background-image: url(../img/decor.png);
+  background-position: left;
+}
+.right {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.text {
+  background-image: url(../img/text.png);
+}
+.text2 {
+  background-image: url(../img/text2.png);
+}
+.man {
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/man.png);
+  background-position: left bottom;
+}
+.woman {
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/woman.png);
+  background-position: right bottom;
+}
+.button {
+  bottom: 0;
+  width: 50%;
+  background-size: auto 100%;
+}
+.button-inet {
+  background-image: url(../img/bt_inet.png);
+}
+.button-more {
+  background-image: url(../img/bt_more.png);
+}
+    /*landscape*/
+@media screen and (min-aspect-ratio: 1024/850) {
+  .logo {
+    width: 47%;
+    height: 27%;
+    top: 6%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .decor {
+    height: 26%;
+    width: 100%;
+  }
+  .text {
+    left: 50%;
+    top: 34%;
+    height: 43%;
+    width: 70%;
+    background-image: url(../img/text.png);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .text2 {
+    left: 0;
+    bottom: -3%;
+    width: 100%;
+    height: 20%;
+    background-image: url(../img/text2.png);
+  }
+  .man {
+    height: 80%;
+    width: 50%;
+  }
+  .woman {
+    height: 80%;
+    width: 50%;
+  }
+  .button {
+    height: 12%;
+  }
+  .button-inet {
+    left: 1em;
+    background-position: bottom left;
+  }
+  .button-more {
+    right: 1em;
+    background-position: bottom right;
+  }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/850) {
+  .logo {
+    width: 47%;
+    height: 20%;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .decor {
+    height: 26%;
+    width: 100%;
+  }
+  .text {
+    left: 50%;
+    top: 53%;
+    height: 25%;
+    width: 75%;
+    background-image: url(../img/text.png);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .text2 {
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 13%;
+    background-image: url(../img/text2.png);
+  }
+  .man {
+    height: 80%;
+    width: 50%;
+  }
+  .woman {
+    height: 80%;
+    width: 50%;
+  }
+  .button {
+    height: 7%;
+    background-position: bottom center;
+  }
+  .button-inet {
+    left: 0;
+    background-position: bottom center;
+  }
+  .button-more {
+    right: 0;
+    background-position: bottom center;
+  }
+}
+/*portrait large*/
+@media screen and (min-aspect-ratio: 900/850) and (max-aspect-ratio: 1024/850) {
+
+}
+/*landscape thin*/
+@media screen and (min-aspect-ratio: 1024/850) and (max-aspect-ratio: 480/300) {
+  .button {
+    height: 10%;
+  }
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.before-load .wrap * {
+  opacity: 0;
+}
+body.before-load .text {
+  -webkit-transform: translateX(-50%) scale(4);
+          transform: translateX(-50%) scale(4);
+  opacity: 0;
+}
+.text {
+  background-image: url(../img/text.png);
+  -webkit-transition-property: -webkit-transform, opacity;
+          -webkit-transition-property: transform, opacity;
+                  transition-property: transform, opacity;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-delay: 1.6s;
+          transition-delay: 1.6s;
+}
+
+body.before-load .man {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.man {
+  -webkit-transition: -webkit-transform .7s;
+          -webkit-transition: transform .7s;
+                  transition: transform .7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+body.before-load .woman {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.woman {
+  -webkit-transition: -webkit-transform .7s;
+          -webkit-transition: transform .7s;
+                  transition: transform .7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: .7s;
+          transition-delay: .7s;
+}
+
+body.before-load .text2 {
+  opacity: 0;
+}
+.text2 {
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}

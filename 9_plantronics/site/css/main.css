@@ -1,0 +1,269 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* mackup*/
+/*portrait*/
+/*portrait android*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;   
+     }
+
+    .header {
+        display: block;
+        position: absolute;
+        height: 38%;
+        width: 100%;
+        background-image: url("../img/portrait/header-man-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+    }
+
+    .main-logo {
+        display: block;
+        position: absolute;
+        top:38%;
+        height: 33%;
+        width: 100%;
+       background-image:
+       url("../img/portrait/logo-main-backbeat-fit.png"),
+       url("../img/portrait/main-center-bg.jpg");
+        background-position: center 35%, center top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 84% auto, 100% 100%;
+     }
+
+    .inscription {
+        position: absolute;
+        top: 72%;
+        display: block;
+        height: 11%;
+        width: 100%;
+        background: url("../img/portrait/main_inscription.png");
+        background-repeat: no-repeat;
+        background-size: 64% auto;
+        background-position: center;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        height: 17%;
+        width: 100%;
+        text-align: center;
+    }
+    .button{
+        position: absolute;
+        display: block;
+        left: 0;
+        /* transform: translateX(-150%); */
+        white-space: pre-line;
+        width: 9em;
+        height: 3.4em;
+        border-bottom: 0.2em #891345 solid;
+        /*padding: 1.1em 1em;*/
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+     .button-internet{
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 9em;
+         height: 3.4em;
+        white-space: pre-line;
+        border-bottom: 0.2em #891345 solid;
+        /*padding: 0.51em 0.5em;*/
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+    .move-button{
+        -webkit-transform: translate(-50%, -230%);
+        -moz-transform: translate(-50%, -230%);
+        -ms-transform: translate(-50%, -230%);
+        -o-transform: translate(-50%, -230%);
+        transform: translate(-50%, -230%);
+        z-index: 500;
+    }
+}
+
+/*2 mackup landscape*/
+@media screen and (min-aspect-ratio: 1024/754){
+    .container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .header {
+        display: block;
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        background-image: url("../img/landscape/header-bg-man.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+    }
+
+    .main-logo {
+        display: block;
+        position: absolute;
+        top:42%;
+        height: 22%;
+        width: 100%;
+        background-image: url("../img/landscape/backbeat-fit-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 38% auto;
+}
+
+    .inscription {
+        position: absolute;
+        top: 64%;
+        display: block;
+        height: 15%;
+        width: 100%;
+        background: url("../img/portrait/main_inscription.png");
+        background-repeat: no-repeat;
+        background-size: 52% auto;
+        background-position: center;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        display: block;
+        /* height: 16%; */
+        width: 100%;
+        text-align: center;
+    }
+    .button{
+        position: absolute;
+        display: block;
+        left: 2em;
+        top: -1em;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        padding: 1.1em 0.5em;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+    .button-internet{
+        position: absolute;
+        display: block;
+        right: 2em;
+        top: -1em;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        padding: 1.1em 0.5em;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+      .move-button{
+        -webkit-transform: translate(-50%, -230%);
+        -moz-transform: translate(-50%, -230%);
+        -ms-transform: translate(-50%, -230%);
+        -o-transform: translate(-50%, -230%);
+        transform: translate(-50%, -230%);
+        z-index: 500;
+    }
+}
+
+@media screen and (min-width: 560px){
+    .button{
+        position: relative;
+        display: inline-block;
+        left: auto;
+        top: 0;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        padding: 1.1em 0.5em;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.1em;
+        -webkit-appearance: none;
+        border-radius: 0;
+        margin-right: 3em;
+    }
+    .button-internet{
+        position: relative;
+        display: inline-block;
+        right: auto;
+        top: 0;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        padding: 1.1em 0.5em;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.1em;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+}
+/*landscape android */
+@media screen and  (orientation: landscape) and (max-width: 800px) {
+    .button{
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: auto;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+        margin-right: 3em;
+        padding: .5em;
+    }
+    .button-internet{
+        position: relative;
+        display: inline-block;
+        top: 0;
+        right: auto;
+        width: 12em;
+        border-bottom: 0.2em #891345 solid;
+        background-color: #f04a23;
+        color: #f8fff8;
+        font-size: 1.0em;
+        -webkit-appearance: none;
+        border-radius: 0;
+        padding: .5em;
+    }
+}
+
+

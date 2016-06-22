@@ -1,0 +1,21 @@
+diff a/11_isweet/site/index.html b/11_isweet/site/index.html	(rejected hunks)
+@@ -12,14 +12,16 @@
+ <body>
+     <div class="wrap">
+         <div class="picture">
+-            <div class="button-wrap">
++
++        </div>
++    </div>
++                <div class="button-wrap">
+                 <button class="button button1">Узнать <br class="for-land">подробнее</button>
+                 <button class="button button2">Выйти в <br class="for-land">интернет</button>
+             </div>
+-        </div>
+-    </div>
+     <script>
+         $("body").addClass("before-load");
++        $("body").addClass("transitions");
+         $(function(){
+             setTimeout(function(){
+                 $("body").removeClass("before-load");

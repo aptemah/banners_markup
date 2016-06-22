@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>SCHOLL</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="logo"></div>
+        <div class="text"></div>
+        <button class="button button1"></button>
+        <button class="button button2"></button>
+        <button class="button button3"></button>
+        <div class="video" style="display: none;">
+            <video style="position:relative;max-width:100%;max-height:100%;" controls>
+                <source src="1.webm" type="video/webm">
+                <source src="1.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+            <div id="imagelightbox-close"></div>
+        </div>
+    </div>
+    <script>
+    $(function(){
+        //setTimeout(function(){$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))},5000)
+    });
+    $(window).load( function(){
+        $("body").removeClass("before-load");
+        //$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+    });
+    $(document).on("click", ".button1", function () {
+        $(".video").fadeIn();
+	$("video").trigger("play");
+    });
+    $(".video").on("click", function () {
+        $(".video").fadeOut();
+    });
+    $("video").on("click", function (e) {
+        e.stopPropagation();
+    });
+    $("#imagelightbox-close").on("click", function () {
+        $(".video").fadeOut();
+	$("video").trigger("pause");
+    });
+    $(".button2").on("click", function () {
+        window.location.href = "http://www.ozon.ru/catalog/1158952/?brand=20996671"
+    });
+    $(".button3").on("click", function () {
+        window.location.href = "http://yandex.ru"
+    });
+    </script>
+</body>
+</html>

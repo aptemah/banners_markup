@@ -1,0 +1,284 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;
+
+}
+div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span {
+    box-sizing: border-box;
+}
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+.wrap-l {
+}
+.wave-2-wave-logo {
+    position: absolute;
+    display: block;
+    top: 2%;
+    height: 14%;
+    width: 100%;
+    background-image: url("img/logo_wave_2_wave.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wave-2-wave-logo-l {
+    background-position-x: 2%;
+
+    height: 15%;
+    top: 4%;
+}
+.logo {
+    position: absolute;
+    display: block;
+    top: 2%;
+    right: 0;
+    height: 8%;
+    width: 25%;
+    background-image: url("img/logo_clean.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation-name: flow; /* Chrome, Safari, Opera */
+    animation-name: flow;
+    -webkit-animation-duration: 15s; /* Chrome, Safari, Opera */
+    animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;
+}
+.logo-l {
+    height: 16%;
+
+    width: 17%;
+}
+.text1 {
+    position: absolute;
+    top: 16%;
+    display: block;
+    height: 3%;
+    width: 100%;
+    font-family: "Cuprum-bold";
+    color: rgb(31, 152, 209);
+    text-align: center;
+    text-transform: uppercase;
+}
+.text1-l {
+    width: 100%;
+    top: 4%;
+    height: 5%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+.text2 {
+    position: absolute;
+    top: 20%;
+    display: block;
+    height: 4%;
+    width: 100%;
+    font-family: "Cuprum-bold";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+}
+.text2-l {
+    width: 100%;
+    top: 10%;
+    height: 9%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+.text3 {
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    display: block;
+    height: 3%;
+    width: 80%;
+    font-family: "Cuprum-bold";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+}
+.text3 > span {
+    display: block;
+}
+.text3 > span > span {
+    color: rgb(31, 152, 209);
+}
+.text3-l {
+    width: 100%;
+    top: 22%;
+    left: 0;
+    height: 6%;
+    padding-left: 21%;
+    padding-right: 21%;
+    line-height: 1;
+}
+.forms {
+    position: absolute;
+    display: inline-block;
+    top: 36%;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.forms-l {
+    width: 62%;
+    left: 18%;
+    height: 130%;
+}
+.forms > input {
+    position: relative;
+    width: 100%;
+    height: 9%;
+    margin-top: 3%;
+    border-radius: 5px;
+    border-color: #d4c9d9;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5%;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: "Ubuntu-Light";
+    font-size: 30px;
+    -webkit-appearance: none;
+}
+.forms-l > input {
+    margin-top: 1%;
+    padding: 2%;
+}
+::-webkit-input-placeholder {color:#1f98d1;}
+::-moz-placeholder          {color:#1f98d1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#1f98d1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#1f98d1;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0;}
+.name {
+
+}
+.name-l {
+
+}
+.phone {
+
+}
+.phone-l {
+
+}
+.email {
+
+}
+.email-l {
+
+}
+.promo-code {
+
+}
+.promo-code-l {
+
+}
+input.button-inet {
+    display: inline-block;
+    font-size: 25px;
+    height: 10%;
+    width: 48%;
+    float: left;
+    border: none;
+    background-color: #1f98d1;
+    padding: 0;
+    margin-top: 5%;
+    color: #ffffff;
+    font-family: "Cuprum-bold";
+    text-transform: uppercase;
+}
+input.button-inet-l {
+    margin-top: 2%;
+    width: 48%;
+}
+input.button-join {
+    display: inline-block;
+    font-size: 25px;
+    height: 10%;
+    width: 48%;
+    float: right;
+    border: none;
+    background-color: #1f98d1;
+    padding: 0;
+    margin-top: 5%;
+    color: #ffffff;
+    font-family: "Cuprum-bold";
+    text-transform: uppercase;
+}
+input.button-join-l {
+    margin-top: 2%;
+    width: 48%;
+}
+@font-face {
+    font-family: Cuprum;
+    src: url(fonts/Cuprum-Regular.ttf);
+}
+@font-face {
+    font-family: Cuprum-bold;
+    src: url(fonts/Cuprum-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: PTSans;
+    src: url(fonts/PT_Sans-Web-Bold.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(fonts/Ubuntu-Light.ttf);
+}
+@-webkit-keyframes flow {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes flow {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+}

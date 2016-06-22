@@ -1,0 +1,71 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">ord = Math.floor(Math.random()*10e12);</script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="landscapeBlock">
+		<div class="leftBlock">
+			<div class="feat">
+				<img src="img/ico1.png" class="ico"><span>ФИТНЕС  </span>
+			</div>
+			<div class="feat">
+				<img src="img/ico2.png" class="ico"><span>БАССЕЙН </span>
+			</div>
+			<div class="feat">
+				<img src="img/ico3.png" class="ico"><span>САЛОН   </span>
+			</div>
+			<div class="feat">
+				<img src="img/ico4.png" class="ico"><span>РЕСТОРАН</span>
+			</div>
+		</div>
+		<img src="img/logo.png" class="logo" />
+		<div class="btn-go" control="internet" wifinext>Войти в Интернет ></div>
+	</div>
+	<div class="portraitBlock">
+		<div class="topBlock1">
+			<img src="img/logoP.png" />
+		</div>
+		<div class="topBlock2">
+			<img src="img/logo2.png" />
+		</div>
+		<div class="leftSide">
+			<img src="img/img1.jpg" />
+			<img src="img/img2.jpg" />
+			<img src="img/img3.jpg" />
+			<img src="img/img4.jpg" />
+		</div>
+		<div class="rightSide">
+
+			<div class="featP1 firstFeat">
+				<img src="img/ico1.png" ><span>ФИТНЕСС</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico2.png" ><span>БАССЕЙН</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico3.png" ><span>САЛОН</span>
+			</div>
+			<div class="featP1">
+				<img src="img/ico4.png" ><span>РЕСТОРАН</span>
+			</div>
+		</div>
+		<div class="btn-goP" control="internet" wifinext>
+			Войти в Интернет >
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(".btn-go").addClass("invisible");
+	$(".btn-goP").addClass("invisible");
+	$(window).load(function(){
+	setTimeout (function(){
+		$(".btn-go").removeClass("invisible")
+		$(".btn-goP").removeClass("invisible")
+	},2000)
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,773 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  }
+@font-face {
+  font-family: Cuprum;
+  src: url(../fonts/Cuprum-Regular.ttf);
+}
+
+.startPage {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 300;
+  background: url("../img/ask_bg.png");
+  font-family: Cuprum;
+  font-size: 2em;
+  
+}
+
+.whoAreYou {
+  text-align: center;
+  font-family: "Cuprum";
+  font-size: 1.2em;
+  color: #222;
+  line-height: 0;
+}
+
+.startPage img {
+  width: 59%;
+  margin: 2%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*start page question*/
+.wrap-man {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+
+}
+
+@media screen and (max-aspect-ratio: 1024 / 754) {
+  .w {
+    background-image: url("../img/ask-button-wooman.png");
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+    background-size: auto 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* float: left; */
+  }
+
+  .m {
+    background-image: url("../img/ask-button-man.png");
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-size: auto 70%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media screen and (min-aspect-ratio: 1024 / 754){
+  .w{
+    background-image: url("../img/ask-button-wooman.png");
+    display: block;
+    width: 50%;
+    height: 47%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 1%;
+    top: 29%;
+    }
+
+  .m{
+    background-image: url("../img/ask-button-man.png");
+    display: block;
+    width: 50%;
+    height: 47%;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 47%;
+    top: 29%;
+  }
+}
+
+
+.wrap-wooman {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+/*body.before-load:after {*/
+/*content: "";*/
+/*position: absolute;*/
+/*display: block;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*background-image: url("../img/load.gif");*/
+/*background-size: 40px 40px;*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+/*}*/
+body {
+  font-size: 12px; }
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+.logo-man, .logo-wooman,
+.button {
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat; }
+
+.logo {
+  background-image: url(../img/p_main_logo.png); }
+
+.button {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 100;
+  background-color: transparent; }
+/*man*/
+
+/*portrait man*/
+@media screen and (max-aspect-ratio: 1024 / 754) {
+  .man {
+    background-position: center 7%;
+    background-size: auto 218%;
+    background-image: url(../img/p-main-bg.jpg);
+    height: 60%;
+    width: 100%;
+  }
+
+  .logo-man {
+    background-image: url(../img/duovit_logo_bg.png);
+    height: 17%;
+    width: 100%;
+    background-size: 100% 100%;
+    top: -3%;
+    /* background-position-y: -168%; */
+  }
+
+  .man-bottom {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-image: url("../img/p_blue_bg.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    height: 47%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .main-top-man {
+    background-image: url("../img/p_main_text_1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+    left: 9px;
+    top: 11%;
+    height: 24%;
+    width: 50%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .main-bottom-man {
+    background-image: url("../img/p_main_text_2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+    left: 9px;
+    top: 43%;
+    height: 22%;
+    width: 50%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .product-man {
+    background-image: url("../img/product.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    right: 0;
+    top: -5%;
+    height: 89%;
+    width: 50%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .bad {
+    background-image: url("../img/bad-text-man-portrait.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    right: 0;
+    bottom: 0;
+    height: 14%;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .logo-man-text {
+    position: absolute;
+    top: 32%;
+    left: 1.5em;
+    background-image: url("../img/duovit_logo.png");
+    background-repeat: no-repeat;
+    height: 41%;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: top left;
+  }
+
+  .button1 {
+    position: absolute;
+    left: 1%;
+    bottom: 21%;
+    height: 11%;
+    width: 48%;
+    background-image: url("../img/button_left_p_man.png");
+    background-size: contain !important;
+  }
+
+  .button2 {
+    position: absolute;
+    right: 1%;
+    bottom: 21%;
+    height: 10%;
+    width: 48%;
+    background-image: url("../img/button_right_p_man.png");
+    background-size: contain;
+  }
+
+  .button {
+    background-position: center;
+    background-size: contain;
+  }
+
+  .button1 {
+    position: absolute;
+    left: 1%;
+    bottom: 18%;
+    height: 18%;
+    width: 48%;
+    background-image: url("../img/button_left_p_man.png");
+    background-size: contain !important;
+  }
+
+  .button2 {
+    position: absolute;
+    right: 1%;
+    bottom: 18%;
+    height: 18%;
+    width: 48%;
+    background-image: url("../img/button_right_p_man.png");
+    background-size: contain;
+  }
+}
+
+/*landscape man*/
+@media screen and (min-aspect-ratio: 1024 / 754) {
+  .man {
+    background-position: center 30%;
+    background-size: auto 293%;
+    background-image: url(../img/p-main-bg.jpg);
+    height: 70%;
+    width: 100%;
+  }
+
+  .logo-man {
+    background-image: url(../img/duovit_logo_bg_lanscape.png);
+    height: 17%;
+    width: 14em;
+    background-size: 100% 100%;
+    top: -3%;
+    /* background-position-y: -168%; */
+  }
+
+  .man-bottom {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-image: url("../img/l_p_blue_bg.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    height: 38%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .main-top-man {
+    background-image: url("../img/l_p_main_text_1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+    left: 9px;
+    top: 19%;
+    height: 24%;
+    width: 50%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .main-bottom-man {
+    background-image: url("../img/l_p_main_text_2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+    left: 9px;
+    top: 61%;
+    height: 10%;
+    width: 65%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .product-man {
+    background-image: url("../img/product.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    right: 29px;
+    top: -27%;
+    height: 206%;
+    width: 23%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .bad {
+    background-image: url("../img/p_about_bad.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    right: 3%;
+    bottom: 0;
+    height: 17%;
+    width: 90%;
+    background-size: contain;
+    position: absolute;
+  }
+
+  .logo-man-text {
+    position: absolute;
+    top: 32%;
+    left: 1.5em;
+    background-image: url("../img/duovit_logo.png");
+    background-repeat: no-repeat;
+    height: 41%;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: top left;
+  }
+
+  .button1 {
+    position: absolute;
+    left: 1%;
+    top: -107%;
+    height: 34%;
+    width: 48%;
+    background-image: url("../img/button_left_p_man.png");
+    background-size: contain !important;
+    min-height: 25%;
+  }
+
+  .button2 {
+    position: absolute;
+    right: 1%;
+    bottom: 21%;
+    height: 37%;
+    width: 48%;
+    background-image: url("../img/button_right_p_man.png");
+    background-size: contain;
+    min-height: 25%;
+  }
+
+  .button {
+    background-position: left;
+    background-size: contain;
+  }
+
+  ..button1 {
+    position: absolute;
+    left: 1%;
+    bottom: 21%;
+    height: 10%;
+    width: 48%;
+    background-image: url("../img/button_left_p_man.png");
+    background-size: contain !important;
+  }
+
+  .button2 {
+    position: absolute;
+    left: 1%;
+    top: -58%;
+    height: 34%;
+    width: 48%;
+    background-image: url("../img/button_right_p_man.png");
+    background-size: contain;
+  }
+}
+
+
+/*wooman*/
+
+  /*portrait wooman*/
+  @media screen and (max-aspect-ratio: 1024 / 754) {
+    .wrap-wooman .man {
+      background-position: center 7%;
+      background-size: auto 218%;
+      background-image: url(../img/w_l_main_bg.jpg);
+      height: 60%;
+      width: 100%;
+    }
+
+    .wrap-wooman .logo-man {
+      background-image: url(../img/duovit_logo_bg.png);
+      height: 17%;
+      width: 100%;
+      background-size: 100% 100%;
+      top: -3%;
+      /* background-position-y: -168%; */
+    }
+
+    .wrap-wooman .man-bottom {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      background-image: url("../img/w_p_fiolet_bg.png");
+      background-size: 100% 100%;
+      background-position: center bottom;
+      height: 47%;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .wrap-wooman .main-top-man {
+      background-image: url("../img/w_p_main_text_1.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      display: block;
+      left: 11px;
+      top: 8%;
+      height: 18%;
+      width: 50%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman .main-bottom-man {
+      background-image: url("../img/w_p_main_text_2.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      display: block;
+      left: 9px;
+      top: 34%;
+      height: 20%;
+      width: 50%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman .product-man {
+      background-image: url("../img/w_product_1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      right: 0;
+      top: -5%;
+      height: 104%;
+      width: 50%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman .bad {
+      background-image: url("../img/bad-text-man-portrait.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      right: 0;
+      bottom: 0;
+      height: 13%;
+      width: 100%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman .logo-man-text {
+      position: absolute;
+      top: 32%;
+      left: 1.5em;
+      background-image: url("../img/duovit_logo.png");
+      background-repeat: no-repeat;
+      height: 41%;
+      width: 100%;
+      background-size: auto 100%;
+      background-position: top left;
+    }
+
+    .wrap-wooman .button1 {
+      position: absolute;
+      left: 1%;
+      bottom: 21%;
+      height: 11%;
+      width: 48%;
+      background-image: url("../img/button_left_p_man.png");
+      background-size: contain !important;
+    }
+
+    .wrap-wooman .button2 {
+      position: absolute;
+      right: 1%;
+      bottom: 21%;
+      height: 10%;
+      width: 48%;
+      background-image: url("../img/button_right_p_man.png");
+      background-size: contain;
+    }
+
+    .wrap-wooman .button {
+      background-position: center;
+      background-size: contain;
+    }
+
+    .wrap-wooman .button1 {
+      position: absolute;
+      left: 1%;
+      bottom: 21%;
+      height: 15%;
+      width: 48%;
+      background-image: url("../img/button_left_p_man.png");
+      background-size: contain !important;
+    }
+
+    .wrap-wooman .button2 {
+      position: absolute;
+      right: 1%;
+      bottom: 21%;
+      height: 15%;
+      width: 48%;
+      background-image: url("../img/button_right_p_man.png");
+      background-size: contain;
+    }
+  }
+
+/*landscape wooman*/
+  @media screen and (min-aspect-ratio: 1024 / 754) {
+  .wrap-wooman  .man {
+      background-position: center 21%;
+      background-size: auto 282%;
+      background-image: url(../img/w_l_main_bg.jpg);
+      height: 71%;
+      width: 100%;
+    }
+
+    .wrap-wooman   .logo-man {
+      background-image: url(../img/duovit_logo_bg_lanscape.png);
+      height: 17%;
+      width: 14em;
+      background-size: 100% 100%;
+      top: -3%;
+      /* background-position-y: -168%; */
+    }
+
+    .wrap-wooman  .man-bottom {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      background-image: url("../img/w_l_fiolet_bg.png");
+      background-size: 100% 100%;
+      background-position: center bottom;
+      height: 37%;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .wrap-wooman   .main-top-man {
+      background-image: url("../img/w_l_main_text_1.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      display: block;
+      left: 20px;
+      top: 21%;
+      height: 13%;
+      width: 50%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman  .main-bottom-man {
+      background-image: url("../img/w_l_main_text_2.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      display: block;
+      left: 16px;
+      top: 61%;
+      height: 13%;
+      width: 65%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman  .product-man {
+      background-image: url("../img/w_product_1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      right: 29px;
+      top: -39%;
+      height: 229%;
+      width: 23%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman  .bad {
+      background-image: url("../img/p_about_bad.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      right: 3%;
+      bottom: 0;
+      height: 17%;
+      width: 90%;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .wrap-wooman   .logo-man-text {
+      position: absolute;
+      top: 32%;
+      left: 1.5em;
+      background-image: url("../img/duovit_logo.png");
+      background-repeat: no-repeat;
+      height: 41%;
+      width: 100%;
+      background-size: auto 100%;
+      background-position: top left;
+    }
+
+    .wrap-wooman   .button1 {
+      position: absolute;
+      left: 1%;
+      top: -98%;
+      height: 24%;
+      width: 48%;
+      background-image: url("../img/button_left_p_man.png");
+      background-size: contain !important;
+    }
+
+    .wrap-wooman  .button2 {
+      position: absolute;
+      right: 1%;
+      bottom: 21%;
+      height: 10%;
+      width: 48%;
+      background-image: url("../img/button_right_p_man.png");
+      background-size: contain;
+    }
+
+    .wrap-wooman   .button {
+      background-position: left;
+      background-size: contain;
+    }
+
+    .wrap-wooman   .button1 {
+      position: absolute;
+      left: 1%;
+      bottom: 21%;
+      height: 28%;
+      width: 47%;
+      background-image: url("../img/button_left_p_man.png");
+      background-size: contain !important;
+      min-height: 27%;
+    }
+
+    .wrap-wooman  .button2 {
+      position: absolute;
+      left: 1%;
+      top: -46%;
+      height: 28%;
+      width: 48%;
+      background-image: url("../img/button_right_p_man.png");
+      background-size: contain;
+      min-height: 27%;
+    }
+  }

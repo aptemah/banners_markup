@@ -1,0 +1,72 @@
+.buttons {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: appear;
+            animation-name: appear;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.button1 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-.5em, 0, 0);
+    transform: translate3d(-.5em, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(.5em, 0, 0);
+    transform: translate3d(.5em, 0, 0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-.5em, 0, 0);
+    transform: translate3d(-.5em, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(.5em, 0, 0);
+    transform: translate3d(.5em, 0, 0);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,231 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.wrap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0.7em 1.5em 0.7em;
+  border-radius: 500px;
+  background-color: #912846;
+  cursor: pointer;
+  z-index: 100;
+}
+.button img {
+    height: 1.5em;
+    margin: 0em 0em -0.3em 0.5em;
+
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+
+.logo,
+.text1-p,
+.text2-p,
+.text1-l,
+.text2-l,
+.text3-l,
+.text4-l,
+.pan {
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.logo {
+    background-image: url("../img/logo.png");
+    background-size: auto 100%;
+    background-position: center;
+    width: 100%;
+    top: 3%;
+}
+.text1-p {
+    background-image: url("../img/text1_p.png");
+    background-size: auto 100%;
+    background-position: center;
+    height: 12%;
+    width: 100%;
+    top: 16%;
+}
+.text2-p {
+    background-image: url("../img/text2_p.png");
+    background-size: auto 100% ;
+    background-position: center;
+    height: 37%;
+    top: 30%;
+    width: 100%;
+}
+.text1-l {
+    background-image: url("../img/text1_l.png");
+    background-size: auto 100%;
+    background-position: center;
+    height: 7%;
+    width: 100%;
+    top: 18%;
+}
+.text2-l {
+    background-image: url("../img/text2_l.png");
+    background-size: 94% auto;
+    background-position: top center;
+    height: 35%;
+    top: 32%;
+    width: 33%;
+}
+.text3-l {
+    background-image: url("../img/text3_l.png");
+    background-size: 97% auto;
+    background-position: top center;
+    height: 34%;
+    top: 32%;
+    width: 33%;
+    left: 33%;
+}
+.text4-l {
+    background-image: url("../img/text4_l.png");
+    background-size: 86% auto;
+    background-position:  top center;
+    height: 25%;
+    top: 32%;
+    width: 33%;
+    left: 66%;
+}
+.pan {
+    background-image: url("../img/pan.png");
+    background-size: auto 100%;
+    background-position: center;
+}
+.buttons {
+    position: absolute;
+    display: block;
+}
+
+    /*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .wrap {
+        background-image: url("../img/bg_l.jpg");
+    }
+    .logo {
+        height: 13%;
+    }
+    .text1-p {
+        display: none;
+    }
+    .text2-p {
+        display: none;
+    }
+    .pan {
+        height: 26%;
+        width: 100%;
+        top: 68%;
+    }
+    .buttons {
+        width: 100%;
+        top: 74%;
+        text-align: center;
+    }
+    .button {
+        margin: 0 0 0 0;
+        font-size: 1em;
+    }
+    .button1 {
+        left: -12%;
+    }
+    .button2 {
+        right: -12%;
+    }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .wrap {
+        background-image: url("../img/bg_p.jpg");
+    }
+    .logo {
+        height: 10%;
+    }
+    .text1-l {
+        display: none;
+    }
+    .text2-l {
+        display: none;
+    }
+    .text3-l {
+        display: none;
+    }
+    .text4-l {
+        display: none;
+    }
+    .pan {
+        height: 17%;
+        width: 100%;
+        top: 68%;
+    }
+    .buttons {
+        width: 100%;
+        top: 85%;
+        text-align: center;
+    }
+    .button {
+        margin: 0 0.5em;
+    }
+}

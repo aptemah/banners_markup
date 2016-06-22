@@ -1,0 +1,219 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+  position: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  body {
+    font-size: 12px;
+ }
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px; } }
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px; } }
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 21px; } }
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 24px; } }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 26px; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 26px; } }
+
+.logo,
+.text,
+.picture,
+.button {
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.logo {
+    background-image: url(../img/logo.png);
+}
+.text {
+    
+}
+.picture {
+    background-image: url(../img/picture.png);
+}
+.button {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 100;
+    background-color: transparent;
+}
+.button1 {
+    background-image: url(../img/button_next.png);
+            transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+.button2 {
+    background-image: url(../img/button_inet.png);
+    opacity: 0;
+}
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+    .wrap {
+        background-color: #000;
+        background-position: center;
+        background-image: url(../img/bg.jpg);
+    }
+    .logo {
+        left: 5%;
+        width: 50%;
+        height: 15%;
+        top: 10%;
+        background-position: left;
+        background-size: contain;
+    }
+    .text {
+        top: 41%;
+        height: 27%;
+        left: 5%;
+        width: 50%;
+        background-image: url(../img/text_l.png);
+        background-position: left;
+        background-size: contain;
+    }
+    .picture {
+        height: 75%;
+        top: 5%;
+        width: 50%;
+        right: 0;
+        background-position: center;
+        background-size: contain;
+            transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    }
+    .button {
+        background-size: contain;
+    }
+    .button1 {
+        height: 13%;
+        top: 81%;
+        width: 40%;
+        left: 5%;
+        background-position: left;
+    }
+    .button2 {
+        height: 9%;
+        top: 85%;
+        width: 40%;
+        right: 5%;
+        background-position: right;
+    }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+    .wrap {
+        background-position: center;
+        background-image: url(../img/bg_p.jpg);
+    }
+    .logo {
+        left: 10%;
+        width: 80%;
+        height: 10%;
+        top: 4%;
+        background-position: center;
+        background-size: contain;
+    }
+    .text {
+        top: 16%;
+        height: 18%;
+        left: 10%;
+        width: 80%;
+        background-image: url(../img/text_p.png);
+        background-position: center;
+        background-size: contain;
+    }
+    .picture {
+        height: 46%;
+        top: 37%;
+        width: 100%;
+        background-position: center;
+        background-size: contain;
+            transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    }
+    .button {
+        background-position: center;
+        background-size: contain;
+    }
+    .button1 {
+        height: 7%;
+        top: 86%;
+        width: 50%;
+    }
+    .button2 {
+        height: 5%;
+        top: 88%;
+        width: 50%;
+        right: 0;
+    }
+}

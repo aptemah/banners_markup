@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Douvit</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="before-load">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!--&lt;!&ndash; start question page&ndash;&gt;-->
+<div class="startPage">
+    <p class="whoAreYou">Ваш пол?</p>
+   <div class="w"></div>
+    <div class="m"></div>
+</div>
+
+
+<!--Add your site or application content here-->
+
+<!-- first wrap start-->
+<div class="wrap-man">
+    <div class="man">
+        <div class="logo-man">
+            <div class="logo-man-text">
+
+            </div>
+        </div>
+    </div>
+    <div class="man-bottom">
+        <div class="main-top-man"></div>
+        <div class="main-bottom-man"></div>
+        <div class="product-man"></div>
+        <div class="bad"></div>
+        <button type="button" class="button button1"></button>
+        <button type="button" class="button button2"></button>
+    </div>
+</div>
+<!--first wrap end -->
+
+ <!--wrap_second start-->
+<div class="wrap-wooman">
+    <div class="man">
+        <div class="logo-man">
+            <div class="logo-man-text">
+
+            </div>
+        </div>
+    </div>
+    <div class="man-bottom">
+        <div class="main-top-man"></div>
+        <div class="main-bottom-man"></div>
+        <div class="product-man"></div>
+        <div class="bad"></div>
+        <button type="button" class="button button1"></button>
+        <button type="button" class="button button2"></button>
+    </div>
+</div>
+<!--wrap second end-->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    //            $(function(){
+    //                setTimeout(function(){$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))},10)
+    //            });
+    $(document).ready( function(){
+        $(".w").on("click" ,function () {
+            $('.wrap-wooman').css('display','block');
+            $('.startPage').css('display','none');
+//            $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))
+        });
+        $('.m').on("click" ,function () {
+            $('.wrap-man').css('display','block');
+            $('.startPage').css('display','none');
+//            $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"))
+        });
+
+//                $("body").removeClass("before-load");
+//                $("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+
+    });
+
+
+
+
+</script>
+</body>
+</html>

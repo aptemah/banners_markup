@@ -1,0 +1,370 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    /*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg_landscape.jpg");
+  }
+  .logo {
+    height: 21%;
+    width: 40%;
+  }
+  .man {
+    top: auto;
+    bottom: -6%;
+    background-position: 23% 100%;
+    height: 100%;
+    width: 100%;
+  }
+  .text1 {
+    top: 22%;
+    left: auto;
+    right: 0;
+    background-size: 90% auto;
+    height: 10%;
+    width: 56%;
+  }
+  .text2 {
+    bottom: 2%;
+    left: 2%;
+  }
+  .text2 > span {
+    font-size: 0.6em;
+  }
+  .telephone {
+    bottom: 2%;
+    right: 5%;
+  }
+  button {
+    font-size: 2em;
+    padding: 0.5em 1.5em;
+    top: 55%;
+    right: 6%;
+  }
+}
+/*portrait*/
+@media screen and (max-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/bg_portrait.jpg");
+  }
+  .logo {
+    height: 11%;
+    width: 70%;
+  }
+  .man {
+    top: 4%;
+    background-position: 59% 100%;
+    height: 65%;
+    width: 100%;
+  }
+  .text1 {
+    top: 79%;
+    left: 0;
+    background-size: 90% auto;
+    height: 10%;
+    width: 100%;
+  }
+  .text2 {
+    bottom: 34%;
+    left: 5%;
+  }
+  .text2 > span {
+    font-size: 0.6em;
+  }
+  .telephone {
+    bottom: 2%;
+    right: 5%;
+  }
+  button {
+    font-size: 2em;
+    padding: 0.3em 1.5em;
+    top: 68%;
+    right: 6%;
+  }
+}
+body {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-text-size-adjust: none; 
+}
+.wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-image: url("../img/logo.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-animation-name: logo;
+  animation-name: logo;  
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.man {
+  position: absolute;
+  display: block;
+  left: 0;
+  background-image: url("../img/man.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.text1 {
+  position: absolute;
+  display: block;
+  background-image: url("../img/text1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation-name: text1;
+  animation-name: text1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.text2 {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  display: inline-block;
+  font-weight: lighter;
+  color: #E3E3E3;
+  font-size: 1.6em;
+  text-decoration: none;
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.text2 > span {
+  display: block;
+}
+.telephone {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  position: absolute;
+  display: inline-block;
+  font-weight: lighter;
+  color: #E3E3E3;
+  font-size: 1.5em;
+  text-decoration: none;
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+button {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  border-width: 3px;
+  border-color: rgb(208, 208, 208);
+  border-style: solid;
+  background-image: -moz-linear-gradient( 90deg, rgb(18,18,20) 0%, rgb(94,95,106) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(18,18,20) 0%, rgb(94,95,106) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(18,18,20) 0%, rgb(94,95,106) 100%);
+  -webkit-animation-name: pulse;
+  animation-name: pulse;  
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+button:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(94,95,106) 0%, rgb(18,18,20) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(94,95,106) 0%, rgb(18,18,20) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(94,95,106) 0%, rgb(18,18,20) 100%);
+}
+body {
+  font-size: 12px; }
+
+h1 {
+  font-size: 20px; }
+
+p, span {
+  font-size: 14px; }
+
+@media screen and (min-width: 300px) {
+  body {
+    font-size: 12px; }
+
+  h1 {
+    font-size: 20px; }
+
+  p, span {
+    font-size: 14px; } }
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 14px; }
+
+  h1 {
+    font-size: 22px; }
+
+  p, span {
+    font-size: 16px; } }
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 16px; }
+
+  h1 {
+    font-size: 24px; }
+
+  p, span {
+    font-size: 18px; } }
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 18px; }
+
+  h1 {
+    font-size: 26px; }
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 0.2;
+  }
+  80% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 0.2;
+  }
+  90% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 0.2;
+  }
+  80% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 0.2;
+  }
+  90% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    top: -100%;
+  }
+  60% {
+    top: -100%;
+  }
+  75% {
+    top: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    top: -100%;
+  }
+  60% {
+    top: -100%;
+  }
+  75% {
+    top: 0;
+  }
+}
+/*----------------------------*/
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }  
+  25% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }  
+  25% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*----------------------------*/
+@-webkit-keyframes text1 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  40% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes text1 {
+  
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  40% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+

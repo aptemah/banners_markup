@@ -1,0 +1,190 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+
+
+
+   /*portrait*/
+  @media screen and (max-aspect-ratio: 1024/754) {
+    .wrap {
+      background-image: url("../img/p_bg.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .logo {
+      height:20%;
+      width: 100%;
+      background-color: white;
+      background-image: url("../img/p_main_logo.jpg");
+      background-repeat:no-repeat;
+      background-position: center center;
+      -webkit-background-size: auto 65%;
+      background-size: auto 65%;
+    }
+    .main {
+      height:80%;
+      width:100%;
+    }
+    .main_first {
+      height:53%;
+      width:100%;
+      background-image: url('../img/p_center_img.png');
+      background-repeat:no-repeat;
+      background-position: center center;
+      -webkit-background-size: auto 73%;
+      background-size: auto 73%;
+    }
+    .main_second {
+      display: block;
+      height:20%;
+      width:100%;
+      background-image: url('../img/p_text.png');
+      background-repeat:no-repeat;
+      background-position: center center;
+      -webkit-background-size:   auto 40%;
+      background-size:  auto 40%;
+    }
+    .main_third {
+      position: relative;
+      height:27%;
+      width:100%;
+    }
+    .button {
+      height:80%;
+      width:100%;
+      position: absolute;
+      top:10%;
+      left:50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: block;
+      background-image: url('../img/p_button.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: auto 60%;
+      background-size:  auto 60%;
+    }
+  }
+
+/*landscape*/
+@media screen and (min-aspect-ratio: 1024/754) {
+  .wrap {
+    background-image: url("../img/p_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .logo {
+    height:20%;
+    width: 100%;
+    background-color: white;
+    background-image: url("../img/p_main_logo.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: auto 70%;
+    background-size: auto 70%;
+  }
+  .main {
+    height:80%;
+    width:100%;
+  }
+  .main_first {
+    height:53%;
+    width:100%;
+    background-image: url('../img/p_center_img.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size:  auto 80%;
+    background-size:  auto 80%;
+  }
+  .main_second {
+    display: block;
+    height:20%;
+    width:100%;
+    background-image: url('../img/p_text.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size:  40%;
+    background-size:  40%;
+  }
+  .main_third {
+    position: relative;
+    height:27%;
+    width:100%;
+  }
+  .button {
+    height:80%;
+    width:80%;
+    position: absolute;
+    top:10%;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    background-image: url('../img/p_button.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size:  auto 80%;
+    background-size:  auto 80%;
+  }
+}
+
+
+body {
+    font-size: 12px;
+}
+  @media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>Swiss</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="pic state1"></div>
+        <div class="pic state2"></div>
+        <div class="pic state3"></div>
+        <div class="text state1"></div>
+        <div class="text state2"></div>
+        <div class="text state3">
+            <div class="button-wrap">
+                <button class="button hat">Получить скидку </button>
+                <button class="button inet">Войти в интернет</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="desc"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="arrow"></div>
+    </div>
+    <script>
+
+    'use strict'
+
+    $(function(){
+
+        setTimeout(function(){
+
+            if ($("body").hasClass("before-load")) {
+
+                $("body").removeClass("before-load");
+                slidesChange();
+
+            }
+
+        },5000);
+
+    });
+
+    $(window).load( function(){
+
+        $("body").removeClass("before-load");
+        slidesChange();
+
+    });
+
+    function slidesChange () {
+
+        var state1 = $(".state1"), state2 = $(".state2"), state3 = $(".state3");
+        var currentState = 0;
+        state1.fadeIn();
+
+        $(".wrap").on("click", function(){
+
+            if (currentState == 0) {
+                state1.fadeOut(function(){state2.fadeIn(function(){currentState = 1;})});
+            };
+
+            if (currentState == 1) {
+                state2.fadeOut(function(){state3.fadeIn(function(){currentState = 2;})});
+                $(".arrow").fadeOut();
+            };
+
+        });
+
+    };
+
+    $(document).on("click", ".hat", function() {
+        console.log("hat")
+    });
+
+    $(document).on("click", ".inet", function() {
+        console.log("inet")
+    });
+
+    </script>
+</body>
+</html>

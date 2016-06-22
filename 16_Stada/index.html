@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		function getParam(paramName) {
+			var match = location.href.match(new RegExp(".?" + paramName + "=([^&]*)"));
+			return match ? match[1] : null;
+		}
+		POINT_ID = Number(getParam("it_p") || 1);
+		LINK_LOGIN = getParam("it_l") || "";
+		DEST_URL = getParam("it_d") || "";
+		PROMO = getParam("it_s") || "";
+		MAC_ADDRESS = getParam("it_m") || "";
+	</script>
+		<script type="text/javascript" src="../../js/linq.js"></script>
+		<script type="text/javascript" src="../../js/wifi.js"></script>
+		<script type="text/javascript" src="../../js/events.js"></script>
+	</head>
+	<body class="before-load">
+		<div class="wrapper">
+		<div class="logoWrapp"><img src="img/logo.png" class="logo" alt=""></div>
+		
+		<div class="label">ЛУЧШИЕ ПРЕПАРАТЫ ПО ДОСТУПНЫМ ЦЕНАМ</div>
+		<div class="slide">БОЛЬ В СПИНЕ?</div>
+		<img src="img/video.png" class="video">
+		<div class="btn-next-div" control="internet" wifinext><img src="img/next.png" class="btn-next"></div>
+		</div>
+		
+		
+		<div class="gifka">
+			<a href="http://stada.ru/products/hondroxid-tabletki.html" class="link1"></a>
+			<a href="http://stada.ru/" class="link2"></a>
+		</div>
+		<div class="timer"></div>
+		<div class="next" control="internet" wifinext><center><img src="img/next2.png" class="btn-next2" /></center></div>
+
+		<script>
+
+	$(function(){
+		setTimeout(function(){
+			//$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+			$("body").removeClass("before-load");
+		},5000);
+	});
+	$(window).load( function(){
+		$(".slide").fadeIn(1000);
+		setTimeout(function(){
+			$(".slide").fadeOut(function(){
+				$("body").removeClass("before-load");
+			});
+		},1000);
+	});
+
+		$('.video').click(function() {
+			$('.wrapper').css("display", "none");
+			$('.gifka').css({"display": "block", "background": "url('img/video2.gif') no-repeat #000", "background-position": "center center", "background-size": "contain"});
+			$('.support').css("display", "none");
+						var sec = 9;
+						function func() {
+
+							if(sec === 5){
+								$('.link1').css('display', 'block');
+							}
+							if(sec === 2){
+								$('.link2').css('display', 'block');
+							}
+							  if(sec === 1) {
+							  	$('.timer').text('До конца рекламы осталось ' + sec + ' секунд.');
+							  	$('.gifka').css({"background": "url('img/final.gif') no-repeat #000", "background-position": "center center", "background-size": "contain"});
+							  	$('.btn-next2').css('display', 'block');
+							  	clearInterval(timer);
+							  	return;
+							  }
+							  $('.timer').text('До конца рекламы осталось ' + sec + ' секунд.');
+							  sec--;
+						}
+
+						
+
+						var timer = setInterval(func , 1000);
+		});
+		
+		$('.btn-next2').click(function() {
+			$('.gifka').css("display", "none");
+			$('.wrapper').css("display", "block");
+			$('.btn-next2').css("display", "none");
+			$('.gifka').css("background", "none");
+		});
+		</script>
+		<div class="support"><p>техническая поддержка Intouch WiFi</p></div>
+		<script>top.wifiInit(window);</script>
+	</body>
+</html>
