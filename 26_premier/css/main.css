@@ -1,0 +1,401 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.wrap {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg.jpg");
+  overflow: hidden;
+  text-align: center;
+}
+.logo,
+.text-0,
+.text-1,
+.button-wrap,
+.hat,
+.inet,
+.license,
+.button-wrap {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button {
+  border: none;
+  background-color: #ff6428;
+}
+.logo {
+  background-image: url("../img/logo.png");
+}
+.text-0 {
+  background-image: url("../img/text-0.png");
+}
+.text-1 {
+  background-image: url("../img/text-1.png");
+}
+.hat {
+  background-image: url("../img/hat.png");
+}
+.inet {
+  background-image: url("../img/inet.png");
+}
+.license {
+  background-image: url("../img/license.png");
+}
+.button-wrap {
+
+}
+/*portrait mobile*/
+@media screen and (max-aspect-ratio: 1024/850) and (max-width: 414px) {
+  .logo {
+    width: 100%;
+    height: 14%;
+    top: 2%;
+    left: 0;
+  }
+  .text-0 {
+    width: 90%;
+    height: 9%;
+    top: 19%;
+    left: 5%;
+  }
+  .text-1 {
+    width: 90%;
+    height: 27%;
+    top: 29%;
+    left: 5%;
+  }
+  .button-wrap {
+    width: 100%;
+    height: 20%;
+    top: 57%;
+  }
+  .button {
+    position: relative;
+    width: 50%;
+    height: 35%;
+    margin: .5em;
+    background-size: auto 65%;
+  }
+  .hat {
+
+  }
+  .inet {
+
+  }
+  .license {
+    width: 96%;
+    height: 5%;
+    bottom: 0%;
+    left: 2%;
+  }
+}
+/*landscape mobile*/
+@media screen and (min-aspect-ratio: 1024/850) and (max-width: 736px) {
+  .logo {
+    width: 42%;
+    height: 23%;
+    top: 4%;
+    left: 3%;
+  }
+  .text-0 {
+    width: 46%;
+    height: 15%;
+    top: 11%;
+    right: 3%;
+    background-image: url("../img/text-0_l.png");
+  }
+  .text-1 {
+    width: 90%;
+    height: 27%;
+    top: 33%;
+    left: 5%;
+    background-image: url("../img/text-1_l.png");
+  }
+  .button-wrap {
+    width: 100%;
+    height: 20%;
+    top: 63%;
+  }
+  .button {
+    position: relative;
+    width: 25%;
+    height: 50%;
+    margin: .5em;
+    background-size: auto 65%;
+  }
+  .hat {
+
+  }
+  .inet {
+
+  }
+  .license {
+    width: 96%;
+    height: 5%;
+    bottom: 0%;
+    left: 2%;
+  }
+}
+
+/*portrait tablet*/
+@media screen and (max-aspect-ratio: 1024/850) {
+  .logo {
+    width: 100%;
+    height: 13%;
+    top: 2%;
+    left: 0;
+  }
+  .text-0 {
+    width: 90%;
+    height: 8%;
+    top: 19%;
+    left: 5%;
+  }
+  .text-1 {
+    width: 90%;
+    height: 26%;
+    top: 32%;
+    left: 5%;
+  }
+  .button-wrap {
+    width: 100%;
+    height: 20%;
+    top: 62%;
+  }
+  .button {
+    position: relative;
+    width: 50%;
+    height: 35%;
+    margin: 1.5em;
+    background-size: auto 52%;
+  }
+  .hat {
+
+  }
+  .inet {
+
+  }
+  .license {
+    width: 96%;
+    height: 10%;
+    bottom: 0%;
+    left: 2%;
+    background-image: url("../img/license_tab_p.png");
+  }
+}
+/*landscape tablet*/
+@media screen and (min-aspect-ratio: 1024/850) and (max-width: 1200px) {
+  .logo {
+    width: 42%;
+    height: 23%;
+    top: 4%;
+    left: 3%;
+  }
+  .text-0 {
+    width: 46%;
+    height: 15%;
+    top: 11%;
+    right: 3%;
+    background-image: url("../img/text-0_l.png");
+  }
+  .text-1 {
+    width: 90%;
+    height: 27%;
+    top: 33%;
+    left: 5%;
+    background-image: url("../img/text-1_l.png");
+  }
+  .button-wrap {
+    width: 100%;
+    height: 16%;
+    top: 72%;
+  }
+  .button {
+    position: relative;
+    width: 30%;
+    height: 50%;
+    margin: 0 2.5em;
+    background-size: auto 65%;
+  }
+  .hat {
+
+  }
+  .inet {
+
+  }
+  .license {
+    width: 96%;
+    height: 10%;
+    bottom: 0%;
+    left: 2%;
+    background-image: url("../img/license_tab_l.png");
+  }
+}
+/*landscape tablet*/
+@media screen and (min-aspect-ratio: 1024/850) {
+  .logo {
+    width: 42%;
+    height: 23%;
+    top: 4%;
+    left: 3%;
+  }
+  .text-0 {
+    width: 46%;
+    height: 15%;
+    top: 11%;
+    right: 3%;
+    background-image: url("../img/text-0_l.png");
+  }
+  .text-1 {
+    width: 90%;
+    height: 27%;
+    top: 33%;
+    left: 5%;
+    background-image: url("../img/text-1_l.png");
+  }
+  .button-wrap {
+    width: 100%;
+    height: 16%;
+    top: 72%;
+  }
+  .button {
+    position: relative;
+    width: 30%;
+    height: 50%;
+    margin: 0 2.5em;
+    background-size: auto 65%;
+  }
+  .hat {
+
+  }
+  .inet {
+
+  }
+  .license {
+    width: 96%;
+    height: 10%;
+    bottom: 0%;
+    left: 2%;
+    background-image: url("../img/license-desc_l.png");
+  }
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  body {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 906px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 906px) and (max-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 20px;
+  }
+}
+.before-load .logo,
+.before-load .text-0,
+.before-load .text-1,
+.before-load .license {
+  opacity: 0;
+}
+.logo,
+.text-0,
+.text-1,
+.license {
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
+  opacity: 1;
+}
+.before-load .button-wrap {
+  opacity: 0;
+}
+.button-wrap {
+  -webkit-transition: opacity 1s 1s;
+          transition: opacity 1s 1s;
+  opacity: 1;
+}
+body.before-load:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/load.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

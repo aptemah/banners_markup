@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>Dr.Loder</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="button-wrap">
+        <button class="hat"></button>
+        <button class="inet"></button>
+        </div>
+    </div>
+    <div class="hat-block">
+        <img class="hat-img-p" src="" alt="">
+        <img class="hat-img-l" src="" alt="">
+        <button class="back"></button>
+        <button class="to-inet"></button>
+    </div>
+
+
+
+    <script>
+    'use strict'
+    $(function(){
+        setTimeout(function(){
+            $("body").removeClass("before-load");
+        },5000);
+    });
+    $(window).load( function(){
+        $("body").removeClass("before-load");
+    });
+
+    $(document).on("click", ".hat", function(){
+        $(".wrap").fadeOut(function(){$(".hat-block").fadeIn()});
+
+        var x = 6;
+
+        switch(x) {
+
+            case 0:
+                $(".hat-img-l").attr("src", "img/hats/academ_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/academ_p.jpg");
+                break;
+            case 1:
+                $(".hat-img-l").attr("src", "img/hats/belorus_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/belorus_p.jpg");
+                break;
+            case 2:
+                $(".hat-img-l").attr("src", "img/hats/korolev_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/korolev_p.jpg");
+                break;
+            case 3:
+                $(".hat-img-l").attr("src", "img/hats/odincovo_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/odincovo_p.jpg");
+                break;
+            case 4:
+                $(".hat-img-l").attr("src", "img/hats/ostozhenko_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/ostozhenko_p.jpg");
+                break;
+            case 5:
+                $(".hat-img-l").attr("src", "img/hats/pavletskaya_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/pavletskaya_p.jpg");
+                break;
+            case 6:
+                $(".hat-img-l").attr("src", "img/hats/skolkovo_l.jpg");
+                $(".hat-img-p").attr("src", "img/hats/skolkovo_p.jpg");
+                break;
+
+        };
+
+    });
+
+    $(document).on("click", ".back", function(){
+        $(".hat-block").fadeOut(function(){$(".wrap").fadeIn()});
+    });
+
+    </script>
+
+
+
+</body>
+</html>

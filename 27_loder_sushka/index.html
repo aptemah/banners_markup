@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="logo"></div>
+        <div class="button-wrap">
+            <button class="button hat"></button></br>
+            <button class="button inet"></button>
+        </div>
+    </div>
+    <script>
+    'use strict'
+    $(function(){
+        setTimeout(function(){
+            $("body").removeClass("before-load");
+        },5000);
+    });
+    $(window).load( function(){
+        $("body").removeClass("before-load");
+    });
+
+
+    </script>
+
+
+
+</body>
+</html>

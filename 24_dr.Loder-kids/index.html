@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <title>Dr.Loder</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="before-load">
+    <div class="wrap">
+        <div class="button-wrap">
+            <div class="button hat"></div>
+            <div class="button inet"></div>
+        </div>
+    </div>
+    <script>
+    'use strict'
+    $(function(){
+        setTimeout(function(){
+            //$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+            $("body").removeClass("before-load");
+        },5000);
+    });
+    $(window).load( function(){
+        $("body").removeClass("before-load");
+        //$("head").append($("<link rel='stylesheet' href='css/animate.css' type='text/css' media='screen' />"));
+    });
+    </script>
+</body>
+</html>
